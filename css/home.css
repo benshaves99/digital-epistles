@@ -1,0 +1,7083 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* navigation */
+#nav-wrapper{
+	text-align: center;
+}
+
+#nav-wrapper h1{
+	font-family: video, serif;
+	font-size: 24px;
+	font-weight: 400;
+	color: rgb(82, 173, 160);
+}
+
+#nav-wrapper h2{
+	font-family: video, serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: rgb(82, 173, 160);
+}
+
+#nav-wrapper a:link{
+	text-decoration: none;
+	color: rgb(82, 173, 160);
+}
+
+#nav-wrapper a:visited{
+	color: rgb(82, 173, 160);
+	text-decoration: none;
+}
+
+#nav-wrapper a:hover{
+	outline-width: 1px;
+	outline-color: rgb(82, 173, 160);
+	outline-offset: 3px;
+	outline-style: dashed;
+}
+
+#bible{
+	text-decoration: underline;
+}
+
+.dark-background{
+	background-color: rgb(53, 59, 65);
+}
+
+.light-background{
+	background-color: rgb(245, 246, 246);
+}
+
+/* desktop sizing */
+#wrapper{
+/*	border: 1px black solid;*/
+	height: 100vh;
+	margin: 0 auto;
+	z-index: -1;
+}
+
+#center{
+	width: 1080px;
+	margin: 0 auto;
+}
+
+/* desktop style */
+@media (min-width:1001px) and (max-width: 3920px) {
+	
+	/* main page style */
+	#mobile-title{
+		position: absolute;
+		line-height: 0px;
+		top: 20%;
+		left: 15%;
+	}
+
+	#digital{
+		font-family: video, serif;
+		font-size: 150px;
+		color: rgb(255, 255, 255);
+	}
+
+	#book{
+		font-family: skolar-latin, serif;
+		font-size: 150px;
+		color: rgb(53, 59, 65);
+		font-weight: 400;
+		text-shadow:
+		-1px -1px 0 rgb(196, 154, 108),
+		1px -1px 0  rgb(196, 154, 108),
+		-1px 1px 0 rgb(196, 154, 108),
+		1px 1px 0 rgb(196, 154, 108);
+	}
+	
+	#niv{
+		font-family: skolar-latin, serif;
+		text-align: center;
+		font-weight: 200;
+		color: rgb(196, 154, 108);
+	}
+	
+	#game-checker{
+		position: absolute;
+		right: 3.5%;
+		top: 90px;
+		width: 80px;
+		height: 800px;
+	}
+	
+	.box{
+		outline-color: rgb(82, 173, 160);
+		outline-style: dashed;
+		outline-width: 1px;
+		height: 80px;
+		width: 80px;
+		margin-top: 100px;
+	}
+	
+	#game-checker-answer{
+		position: absolute;
+		right: 4.5%;
+		top: 124px;
+		width: 80px;
+		height: 750px;
+	}
+	
+	.answer{
+		background-color: rgb(82, 173, 160);
+		height: 80px;
+		width: 80px;
+		margin-top: 100px;
+		text-align: center;
+		font-family: video, serif;
+		color: rgb(245, 246, 246);
+	}
+	
+	.apply-button{
+		margin-top: 40px;
+		font-family: video, serif;
+		background-color: rgb(82, 173, 160);
+		color: rgb(245, 246, 246);
+		font-size: 16px;
+		padding: 5px;
+		margin-left: 10px;
+		display: none;
+	}
+	
+	.close-button{
+		padding: 10px;
+		font-family: video, serif;
+		font-size: 16px;
+		background-color: rgb(82, 173, 160);
+		color: rgb(245, 246, 246);
+		margin-left: 240px;
+		margin-bottom: 20px;
+	}
+	
+	#main-images-opinion img{
+		width: 500px;
+		padding-bottom: 20px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	
+	#main-images-opinion h1{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: justify;
+		padding: 20px;
+		color: rgb(245, 246, 246);
+	}
+	
+	#main-images-opinion{
+		width: 540px;
+		position: absolute;
+		top: 300px;
+		right: 15%;
+		background-color: rgb(53, 59, 65);
+		display: none;
+	}
+	
+	#nav-dropdown-menu{
+		display: none;
+	}
+	
+	#main-page-nav{
+		display: none;
+	}
+	
+	#desktop-main-page-nav{
+		position: absolute;
+		top: 50%;
+		left: 20%;
+	}
+	
+	#desktop-main-page-nav h1{
+		font-family: video, serif;
+		font-weight: 200;
+		color: rgb(82, 173, 160);
+		letter-spacing: 10px;
+		font-size: 20px;
+		line-height: 50px;
+	}
+	
+	#desktop-main-page-nav a{
+		color: rgb(82, 173, 160);
+		text-decoration: none;
+	}
+	
+	#desktop-main-page-nav a:visited{
+		color: rgb(82, 173, 160);
+		text-decoration: none;
+	}
+	
+	#desktop-main-page-nav a:hover{
+		color: rgb(82, 173, 160);
+		text-decoration: underline;
+	}
+	
+	#mobile-romans{
+		width: 200px;
+		position: absolute;
+		top: 45%;
+		left: 27%;
+		display: none;
+	}
+	
+	#mobile-1-corinth{
+		width: 200px;
+		position: absolute;
+		top: 50%;
+		left: 35%;
+		display: none;
+	}
+	
+	#mobile-2-corinth{
+		width: 200px;
+		position: absolute;
+		top: 55%;
+		left: 35%;
+		display: none;
+	}
+	
+	#mobile-galatians{
+		width: 200px;
+		position: absolute;
+		top: 60%;
+		left: 30%;
+		display: none;
+	}
+	
+	#mobile-ephesis{
+		width: 200px;
+		position: absolute;
+		top: 65%;
+		left: 30%;
+		display: none;
+	}
+	
+	#mobile-philippi{
+		width: 200px;
+		position: absolute;
+		top: 70%;
+		left: 33%;
+		display: none;
+	}
+	
+	#mobile-colossians{
+		width: 200px;
+		position: absolute;
+		top: 75%;
+		left: 31%;
+		display: none;
+	}
+	
+	#mobile-1-thess{
+		width: 200px;
+		position: absolute;
+		top: 80%;
+		left: 38%;
+		display: none;
+	}
+	
+	#mobile-2-thess{
+		width: 200px;
+		position: absolute;
+		top: 85%;
+		left: 38%;
+		display: none;
+	}
+	
+	#mobile-1-timothy{
+		width: 200px;
+		position: absolute;
+		top: 90%;
+		left: 30%;
+		display: none;
+	}
+	
+	#mobile-2-timothy{
+		position: absolute;
+		top: 95%;
+		left: 30%;
+		width: 200px;
+		display: none;
+	}
+	
+	#mobile-titus{
+		position: absolute;
+		top: 100%;
+		left: 25%;
+		width: 200px;
+		display: none;
+	}
+	
+	.footer{
+		position: absolute;
+		width: 100%;
+		height: 100px;
+		top: 125%;
+	}
+	
+	#hamburger-menu{
+		display:none;
+	}
+	
+	#chapter-start{
+		font-size: 25px;
+		letter-spacing: 0px;
+		font-weight: 600;
+	}
+	
+	#bible-game-menu{
+		position: absolute;
+		left: 10%;
+		top: 180px;
+		width: 80px;
+		height: 800px;
+	}
+	
+	#bible-game-answer{
+		position: absolute;
+		left: 11%;
+		top: 190px;
+		width: 80px;
+		height: 800px;
+	}
+	
+	#roman-images-opinion img{
+		width: 500px;
+		padding-bottom: 20px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	
+	#roman-images-opinion h1{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: justify;
+		padding: 20px;
+	}
+	
+	#roman-images-opinion{
+		width: 540px;
+		position: absolute;
+		top: 300px;
+		left: 30%;
+		background-color: rgb(245, 246, 246);
+		border: dashed 1px rgb(82, 173, 160);
+		display: none;
+	}
+	
+	.interactive{
+		color: rgb(82, 173, 160);
+		font-weight: 500;
+		cursor: pointer;
+	}
+	
+	.website{
+		font-family: video, serif;
+		font-size: 16px;
+		font-weight: 100;
+		padding: 20px;
+		background-color: rgb(245, 246, 246);
+		border: solid 1px rgb(82, 173, 160);
+	}
+	
+	.website a{
+		color: rgb(82, 173, 160);
+	}
+	
+	.website a:visited{
+		color: rgb(82, 173, 160);
+	}
+	
+	#desktop-about{
+		font-weight: 900;
+	}
+	
+	.mute{
+		width: 50px;
+		padding: 10px;
+		background-color: rgb(82, 173, 160);
+		position: fixed;
+		left: 0%;
+		top: 66%;
+		display: none;
+		
+	}
+	
+	button{
+		cursor: pointer;
+	}
+	
+					/* answers hidden */
+					#main-answer-1{
+						display: none;
+					}
+					#main-answer-2{
+						display: none;
+					}
+					#main-answer-3{
+						display: none;
+					}
+					#main-answer-4{
+						display: none;
+					}
+					#roman-answer-1{
+						display: none;
+					}
+					#roman-answer-2{
+						display: none;
+					}
+					#roman-answer-3{
+						display: none;
+					}
+					#roman-answer-4{
+						display: none;
+					}
+					#roman-answer-5{
+						display: none;
+					}
+					#roman-answer-6{
+						display: none;
+					}
+					#one-corinth-answer-1{
+						display: none;
+					}
+					#one-corinth-answer-2{
+						display: none;
+					}
+					#one-corinth-answer-3{
+						display: none;
+					}
+					#one-corinth-answer-4{
+						display: none;
+					}
+					#one-corinth-answer-5{
+						display: none;
+					}
+					#one-corinth-answer-6{
+						display: none;
+					}
+					#one-corinth-answer-7{
+						display: none;
+					}
+					#two-corinth-answer-1{
+						display: none;
+					}
+					#two-corinth-answer-2{
+						display: none;
+					}
+					#two-corinth-answer-3{
+						display: none;
+					}
+					#two-corinth-answer-4{
+						display: none;
+					}
+					#two-corinth-answer-5{
+						display: none;
+					}
+					#two-corinth-answer-6{
+						display: none;
+					}
+					#galatians-answer-1{
+						display: none;
+					}
+					#galatians-answer-2{
+						display: none;
+					}
+					#galatians-answer-3{
+						display: none;
+					}
+					#galatians-answer-4{
+						display: none;
+					}
+					#galatians-answer-5{
+						display: none;
+					}
+					#galatians-answer-6{
+						display: none;
+					}
+					#galatians-answer-7{
+						display: none;
+					}
+					#ephesis-answer-1{
+						display: none;
+					}
+					#ephesis-answer-2{
+						display: none;
+					}
+					#ephesis-answer-3{
+						display: none;
+					}
+					#ephesis-answer-4{
+						display: none;
+					}
+					#ephesis-answer-5{
+						display: none;
+					}
+					#ephesis-answer-6{
+						display: none;
+					}
+					#ephesis-answer-7{
+						display: none;
+					}
+					#ephesis-answer-8{
+						display: none;
+					}
+					#ephesis-answer-9{
+						display: none;
+					}
+					#philippi-answer-1{
+						display: none;
+					}
+					#philippi-answer-2{
+						display: none;
+					}
+					#philippi-answer-3{
+						display: none;
+					}
+					#philippi-answer-4{
+						display: none;
+					}
+					#philippi-answer-5{
+						display: none;
+					}
+					#philippi-answer-6{
+						display: none;
+					}
+					#philippi-answer-7{
+						display: none;
+					}
+					#colossians-answer-1{
+						display: none;
+					}
+					#colossians-answer-2{
+						display: none;
+					}
+					#colossians-answer-3{
+						display: none;
+					}
+					#colossians-answer-4{
+						display: none;
+					}
+					#colossians-answer-5{
+						display: none;
+					}
+					#colossians-answer-6{
+						display: none;
+					}
+					#colossians-answer-7{
+						display: none;
+					}
+					#colossians-answer-8{
+						display: none;
+					}
+					#colossians-answer-9{
+						display: none;
+					}
+					#colossians-answer-10{
+						display: none;
+					}
+					#one-thess-answer-1{
+						display: none;
+					}
+					#one-thess-answer-2{
+						display: none;
+					}
+					#one-thess-answer-3{
+						display: none;
+					}
+					#one-thess-answer-4{
+						display: none;
+					}
+					#one-thess-answer-5{
+						display: none;
+					}
+					#one-thess-answer-6{
+						display: none;
+					}
+					#one-thess-answer-7{
+						display: none;
+					}
+					#one-thess-answer-8{
+						display: none;
+					}
+					#one-thess-answer-9{
+						display: none;
+					}
+					#one-thess-answer-10{
+						display: none;
+					}
+					#one-thess-answer-11{
+						display: none;
+					}
+					#two-thess-answer-1{
+						display: none;
+					}
+					#two-thess-answer-2{
+						display: none;
+					}
+					#two-thess-answer-3{
+						display: none;
+					}
+					#two-thess-answer-4{
+						display: none;
+					}
+					#two-thess-answer-5{
+						display: none;
+					}
+					#two-thess-answer-6{
+						display: none;
+					}
+					#two-thess-answer-7{
+						display: none;
+					}
+					#two-thess-answer-8{
+						display: none;
+					}
+					#two-thess-answer-9{
+						display: none;
+					}
+					#two-thess-answer-10{
+						display: none;
+					}
+					#two-thess-answer-11{
+						display: none;
+					}
+					#two-thess-answer-12{
+						display: none;
+					}
+					#two-thess-answer-13{
+						display: none;
+					}
+					#one-timothy-answer-1{
+						display: none;
+					}
+					#one-timothy-answer-2{
+						display: none;
+					}
+					#one-timothy-answer-3{
+						display: none;
+					}
+					#one-timothy-answer-4{
+						display: none;
+					}
+					#one-timothy-answer-5{
+						display: none;
+					}
+					#one-timothy-answer-6{
+						display: none;
+					}
+					#one-timothy-answer-7{
+						display: none;
+					}
+					#two-timothy-answer-1{
+						display: none;
+					}
+					#two-timothy-answer-2{
+						display: none;
+					}
+					#two-timothy-answer-3{
+						display: none;
+					}
+					#two-timothy-answer-4{
+						display: none;
+					}
+					#two-timothy-answer-5{
+						display: none;
+					}
+					#two-timothy-answer-6{
+						display: none;
+					}
+					#two-timothy-answer-7{
+						display: none;
+					}
+					#two-timothy-answer-8{
+						display: none;
+					}
+					#titus-answer-1{
+						display: none;
+					}
+					#titus-answer-2{
+						display: none;
+					}
+					#titus-answer-3{
+						display: none;
+					}
+					#titus-answer-4{
+						display: none;
+					}
+					#titus-answer-5{
+						display: none;
+					}
+					#titus-answer-6{
+						display: none;
+					}
+					/* end answers hidden */
+	
+	/* roman style */
+	#roman-title-center{
+		position: absolute;
+		top: 150px;
+		left: 30%;
+	}
+	
+	#roman-title{
+		font-family: skolar-latin, serif;
+		text-shadow: 
+		-1px -1px 0 rgb(196, 154, 108),
+		1px -1px 0  rgb(196, 154, 108),
+		-1px 1px 0 rgb(196, 154, 108),
+		1px 1px 0 rgb(196, 154, 108);
+		font-weight: 400;
+		color: rgb(245, 246, 246);
+		font-size: 100px;
+	}
+	
+	#roman-chapters{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(82, 173, 160);
+		font-size: 140px;
+		position: absolute;
+		top: -40px;
+		left: 115%;
+		cursor: pointer;
+	}
+	
+	#roman-dropdown-menu{
+		position: relative;
+		top: 0px;
+		left: 75%;
+		width: 400px;
+		display: none;
+		z-index: 1;
+	}
+	
+	#roman-dropdown-menu span{
+		padding: 15px;
+		display: inline-block;
+		border: rgb(82, 173, 160) 1px solid;
+		background-color: rgb(245, 246, 246);
+	}
+	
+	#roman-dropdown-menu h1{
+		font-family: video, serif;
+		color: rgb(82, 173, 160);
+	}
+	
+	#roman-chapters-mobile{
+		display: none;
+	}
+	
+	#roman-map{
+		display: none;
+	}
+	
+	#roman-verses{
+		display: none;
+	}
+	
+	#roman-castle{
+		display: none;
+	}
+	
+	#roman-blindfolded-man{
+		display: none;
+	}
+	
+	#roman-abraham{
+		display: none;
+	}
+	
+	#roman-adam-eve{
+		display: none;
+	}
+	
+	#roman-deadly-sins{
+		display: none;
+	}
+	
+	#roman-law{
+		display: none;
+	}
+	
+	#roman-holy-spirit{
+		display: none;
+	}
+	
+	#roman-israel{
+		display: none;
+	}
+	
+	#roman-disciple{
+		display: none;
+	}
+	
+	#roman-walls{
+		display: none;
+	}
+	
+	#roman-sacrifice{
+		display: none;
+	}
+	
+	#roman-government-building{
+		display: none;
+	}
+	
+	#roman-stumble{
+		display: none;
+	}
+	
+	#roman-pride{
+		display: none;
+	}
+	
+	#roman-blessing{
+		display: none;
+	}
+	
+	#roman-text-1{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 0px;
+		width: 80%;
+	}
+	
+	#image-simple-gospel{
+		display: none;
+		position: fixed;
+		width: 250px;
+		top: 350px;
+		left: 30%;
+	}
+
+	#roman-text-2{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 50px;
+		width: 80%;
+	}
+	
+	#roman-text-3{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 100px;
+		width: 80%;
+	}
+	
+	#site-cru-sharing{
+		position: fixed;
+		top: 350px;
+		right: 10%;
+		display: none;
+	}
+	
+	#roman-text-4{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 150px;
+		width: 80%;
+	}
+	
+	#roman-text-5{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 200px;
+		width: 80%;
+	}
+	
+	#roman-text-6{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 250px;
+		width: 80%;
+	}
+	
+	#roman-text-7{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 300px;
+		width: 80%;
+	}
+	
+	#roman-text-8{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 350px;
+		width: 80%;
+	}
+	
+	#site-graham-sharing{
+		position: fixed;
+		right: 10%;
+		top: 350px;
+		display: none;
+	}
+	
+	#roman-text-9{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 400px;
+		width: 80%;
+	}
+	
+	#roman-text-10{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 450px;
+		width: 80%;
+	}
+	
+	#image-kanye-gospel{
+		position: fixed;
+		top: 300px;
+		left: 30%;
+		width: 200px;
+		display: none;
+	}
+	
+	#roman-text-11{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 500px;
+		width: 80%;
+	}
+	
+	#roman-text-12{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 550px;
+		width: 80%;
+	}
+	
+	#image-discipleship{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 300px;
+		display: none;
+	}
+	
+	#roman-text-13{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 600px;
+		width: 80%;
+	}
+	
+	#roman-text-14{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 650px;
+		width: 80%;
+	}
+	
+	#roman-text-15{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 700px;
+		width: 80%;
+	}
+	
+	#inter-steps-title{
+		font-family: video, serif;
+		text-align: center;
+		padding-bottom: 25px;
+	}
+	
+	#inter-steps-gospel{
+		border: rgb(82, 173, 160) 1px solid;
+		background-color: rgb(245, 246, 246);
+		width: 400px;
+		padding: 20px;
+		position: fixed;
+		right: 10%;
+		top: 200px;
+		display: none;
+	}
+	
+	#inter-steps-gospel h1{
+		font-family: skolar-latin, serif;
+		font-weight: 100;
+		font-size: 18px;
+		padding-left: 10px;
+	}
+	
+	#inter-steps-2{
+		display: none;
+	}
+	
+	#inter-steps-3{
+		display: none;
+	}
+	
+	#inter-steps-4{
+		display: none;
+	}
+	
+	#inter-steps-button-1{
+		font-family: video, serif;
+		font-size: 16px;
+		color: rgb(245, 246, 246);
+		padding: 5px;
+		border: solid 1px rgb(82, 173, 160);
+		background-color: rgb(82, 173, 160);
+		margin-top: 25px;
+		position: relative;
+		left: 38%;
+	}
+	
+	#inter-steps-button-2{
+		font-family: video, serif;
+		font-size: 16px;
+		color: rgb(245, 246, 246);
+		padding: 5px;
+		border: solid 1px rgb(82, 173, 160);
+		background-color: rgb(82, 173, 160);
+		margin-top: 15px;
+		position: relative;
+		left: 38%;
+		display: none;
+	}
+	
+	#inter-steps-button-3{
+		font-family: video, serif;
+		font-size: 16px;
+		color: rgb(245, 246, 246);
+		padding: 5px;
+		border: solid 1px rgb(82, 173, 160);
+		background-color: rgb(82, 173, 160);
+		margin-top: 15px;
+		position: relative;
+		left: 38%;
+		display: none;
+	}
+	
+	#inter-steps-button-4{
+		font-family: video, serif;
+		font-size: 16px;
+		color: rgb(245, 246, 246);
+		padding: 5px;
+		border: solid 1px rgb(82, 173, 160);
+		background-color: rgb(82, 173, 160);
+		margin-top: 15px;
+		position: relative;
+		left: 38%;
+		display: none;
+	}
+	
+	#roman-text-16{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 750px;
+		width: 80%;
+		padding-bottom: 150px;
+	}
+	
+	#roman-all-text{
+		position: absolute;
+		left: 35%;
+		top: 300px;
+		z-index: -.1;
+	}
+	
+	/* 1 corinthian style */
+	#one-corinth-title-center{
+		position: absolute;
+		top: 150px;
+		left: 20%;
+	}
+	
+	#one-corinth-title{
+		font-family: skolar-latin, serif;
+		text-shadow: 
+		-1px -1px 0 rgb(196, 154, 108),
+		1px -1px 0  rgb(196, 154, 108),
+		-1px 1px 0 rgb(196, 154, 108),
+		1px 1px 0 rgb(196, 154, 108);
+		font-weight: 400;
+		color: rgb(245, 246, 246);
+		font-size: 100px;
+		width: 740px;
+	}
+	
+	#one-corinth-chapters{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(82, 173, 160);
+		font-size: 140px;
+		position: absolute;
+		top: -40px;
+		left: 108%;
+		cursor: pointer;
+	}
+	
+	#one-corinth-dropdown-menu{
+		position: relative;
+		top: 0px;
+		left: 65%;
+		width: 400px;
+		display: none;
+		z-index: 1;
+	}
+	
+	#one-corinth-dropdown-menu span{
+		padding: 15px;
+		display: inline-block;
+		border: rgb(82, 173, 160) 1px solid;
+		background-color: rgb(245, 246, 246);
+	}
+	
+	#one-corinth-dropdown-menu h1{
+		font-family: video, serif;
+		color: rgb(82, 173, 160);
+	}
+	
+	#one-corinth-chapters-mobile{
+		display: none;
+	}
+	
+	#one-corinth-map{
+		display: none;
+	}
+	
+	#one-corinth-christ-crucified{
+		display: none;
+	}
+	
+	#one-corinth-baby{
+		display: none;
+	}
+	
+	#one-corinth-early-church{
+		display: none;
+	}
+	
+	#one-corinth-bad-bread{
+		display: none;
+	}
+	
+	#one-corinth-lawsuit{
+		display: none;
+	}
+	
+	#one-corinth-marriage{
+		display: none;
+	}
+	
+	#one-corinth-altar{
+		display: none;
+	}
+	
+	#one-corinth-freedom{
+		display: none;
+	}
+	
+	#one-corinth-solid-rock{
+		display: none;
+	}
+	
+	#one-corinth-mercy{
+		display: none;
+	}
+	
+	#one-corinth-sacred-text{
+		display: none;
+	}
+	
+	#one-corinth-misuse{
+		display: none;
+	}
+	
+	#one-corinth-good-worship{
+		display: none;
+	}
+	
+	#one-corinth-last-supper{
+		display: none;
+	}
+	
+	#one-corinth-blessing{
+		display: none;
+	}
+	
+	#one-corinth-text-1{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 0px;
+		width: 80%;
+	}
+	
+	#one-corinth-text-2{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 50px;
+		width: 80%;
+	}
+	
+	#one-corinth-text-3{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 100px;
+		width: 80%;
+	}
+	
+	#image-corinth-loyal{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 300px;
+		display: none;
+	}
+	
+	#one-corinth-text-4{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 150px;
+		width: 80%;
+	}
+	
+	#one-corinth-text-5{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 200px;
+		width: 80%;
+	}
+	
+	#one-corinth-text-6{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 250px;
+		width: 80%;
+	}
+	
+	#image-corinth-justice{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 300px;
+		display: none;
+	}
+	
+	#one-corinth-text-7{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 300px;
+		width: 80%;
+	}
+	
+	#image-corinth-swear-bible{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 300px;
+		display: none;
+	}
+	
+	#one-corinth-text-8{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 350px;
+		width: 80%;
+	}
+	
+	#one-corinth-text-9{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 400px;
+		width: 80%;
+	}
+	
+	#image-corinth-quiet-time{
+		position: fixed;
+		top: 350px;
+		right: 10%;
+		width: 300px;
+		display: none;
+	}
+	
+	#one-corinth-text-10{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 450px;
+		width: 80%;
+	}
+	
+	#inter-corinth-gods-word{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 300px;
+		background-color: rgb(245, 246, 246);
+		border: rgb(82, 173, 160) 1px solid;
+		padding: 20px;
+		display: none;
+	}
+	
+	#inter-corinth-gods-word h1{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 20px;
+	}
+	
+	#inter-corinth-gods-word h2{
+		display: inline-block;
+		font-family: video, serif;
+		color: rgb(82, 173, 160);
+		font-weight: 100;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	
+	#inter-corinth-gods-word h2:hover{
+		border: rgb(82, 173, 160) 1px dashed;
+	}
+	
+	.inter-corinth-gods-word-select{
+		background-color: rgb(82, 173, 160);
+	}
+	
+	#one-corinth-text-11{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 500px;
+		width: 80%;
+	}
+	
+	#one-corinth-text-12{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 550px;
+		width: 80%;
+	}
+	
+	#inter-corinth-follow-laws{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 300px;
+		background-color: rgb(245, 246, 246);
+		border: rgb(82, 173, 160) 1px solid;
+		padding: 20px;
+		display: none;
+	}
+	
+	#inter-corinth-follow-laws h1{
+		font-family: skolar-latin, serif;
+		font-weight: 500;
+		font-size: 23px;
+	}
+	
+	#inter-corinth-follow-laws form{
+		padding-top: 15px;
+	}
+	
+	#inter-corinth-follow-laws textarea{
+		font-family: skolar-latin, serif;
+		font-size: 16px;
+		width: 250px;
+		height: 100px;
+		resize: none;
+	}
+	
+	#one-corinth-text-13{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 600px;
+		width: 80%;
+	}
+	
+	#one-corinth-text-14{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 650px;
+		width: 80%;
+	}
+	
+	#one-corinth-text-15{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 700px;
+		width: 80%;
+	}
+	
+	#inter-corinth-important{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 300px;
+		background-color: rgb(245, 246, 246);
+		border: rgb(82, 173, 160) 1px solid;
+		padding: 20px;
+		display: none;
+	}
+	
+	#inter-corinth-important h1{
+		font-family: skolar-latin, serif;
+		font-weight: 600;
+		font-size: 20px;
+	}
+	
+	#inter-corinth-important form{
+		padding-top: 15px;
+	}
+	
+	#inter-corinth-important textarea{
+		font-family: skolar-latin, serif;
+		font-size: 16px;
+		width: 250px;
+		height: 100px;
+		resize: none;
+	}
+	
+	#one-corinth-text-16{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 750px;
+		width: 80%;
+		padding-bottom: 150px;
+	}
+	
+	#one-corinth-all-text{
+		position: absolute;
+		top: 300px;
+		left: 35%;
+		z-index: -.1;
+	}
+	
+	#one-corinth-images-opinion img{
+		width: 500px;
+		padding-bottom: 20px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	
+	#one-corinth-images-opinion h1{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: justify;
+		padding: 20px;
+		color: rgb(53, 59, 65);
+	}
+	
+	#one-corinth-images-opinion{
+		width: 540px;
+		position: absolute;
+		top: 300px;
+		left: 30%;
+		background-color: rgb(245, 246, 246);
+		border: dashed 1px rgb(82, 173, 160);
+		display: none;
+	}
+	
+	/* 2 corinthian style */
+	#two-corinth-title-center{
+		position: absolute;
+		top: 150px;
+		left: 20%;
+	}
+	
+	#two-corinth-title{
+		font-family: skolar-latin, serif;
+		text-shadow: 
+		-1px -1px 0 rgb(196, 154, 108),
+		1px -1px 0  rgb(196, 154, 108),
+		-1px 1px 0 rgb(196, 154, 108),
+		1px 1px 0 rgb(196, 154, 108);
+		font-weight: 400;
+		color: rgb(245, 246, 246);
+		font-size: 100px;
+		width: 750px;
+	}
+	
+	#two-corinth-chapters{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(82, 173, 160);
+		font-size: 140px;
+		position: absolute;
+		top: -40px;
+		left: 108%;
+		cursor: pointer;
+	}
+	
+	#two-corinth-dropdown-menu{
+		position: relative;
+		top: 0px;
+		left: 65%;
+		width: 400px;
+		display: none;
+		z-index: 1;
+	}
+	
+	#two-corinth-dropdown-menu span{
+		padding: 15px;
+		display: inline-block;
+		border: rgb(82, 173, 160) 1px solid;
+		background-color: rgb(245, 246, 246);
+	}
+	
+	#two-corinth-dropdown-menu h1{
+		font-family: video, serif;
+		color: rgb(82, 173, 160);
+	}
+	
+	#two-corinth-chapters-mobile{
+		display: none;
+	}
+	
+	#two-corinth-map{
+		display: none;
+	}
+	
+	#two-corinth-healthy-grief{
+		display: none;
+	}
+	
+	#two-corinth-new-covenant{
+		display: none;
+	}
+	
+	#two-corinth-already{
+		display: none;
+	}
+	
+	#two-corinth-new-body{
+		display: none;
+	}
+	
+	#two-corinth-idolatry{
+		display: none;
+	}
+	
+	#two-corinth-letter{
+		display: none;
+	}
+	
+	#two-corinth-lords-people{
+		display: none;
+	}
+	
+	#two-corinth-serve-mural{
+		display: none;
+	}
+	
+	#two-corinth-paul-ministry{
+		display: none;
+	}
+	
+	#two-corinth-false-teachings{
+		display: none;
+	}
+	
+	#two-corinth-blessing{
+		display: none;
+	}
+	
+	#two-corinth-understanding{
+		display: none;
+	}
+	
+	#two-corinth-text-1{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 0px;
+		width: 80%;
+	}
+	
+	#image-corinth-searching{
+		position: fixed;
+		top: 350px;
+		right: 10%;
+		width: 300px;
+		display: none;
+	}
+	
+	#two-corinth-text-2{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 50px;
+		width: 80%;
+	}
+	
+	#two-corinth-text-3{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 100px;
+		width: 80%;
+	}
+	
+	#image-corinth-shameful{
+		position: fixed;
+		top: 350px;
+		right: 10%;
+		width: 300px;
+		display: none;
+	}
+	
+	#two-corinth-text-4{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 150px;
+		width: 80%;
+	}
+	
+	#image-corinth-barren{
+		position: fixed;
+		top: 300px;
+		right: 10%;
+		width: 300px;
+		display: none;
+	}
+	
+	#two-corinth-text-5{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 200px;
+		width: 80%;
+	}
+	
+	#two-corinth-text-6{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 250px;
+		width: 80%;
+	}
+	
+	#inter-corinth-struggles{
+		position: fixed;
+		top: 350px;
+		right: 10%;
+		width: 300px;
+		background-color: rgb(245, 246, 246);
+		border: rgb(82, 173, 160) 1px solid;
+		padding: 20px;
+		display: none;
+	}
+	
+	#inter-corinth-struggles form{
+		padding-top: 15px;
+	}
+	
+	#inter-corinth-struggles textarea{
+		font-family: skolar-latin, serif;
+		font-size: 16px;
+		width: 250px;
+		height: 100px;
+		resize: none;
+	}
+	
+	#inter-corinth-struggles h1{
+		font-family: skolar-latin, serif;
+		font-weight: 600;
+		font-size: 20px;
+	}
+	
+	#two-corinth-text-7{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 300px;
+		width: 80%;
+	}
+	
+	#two-corinth-text-8{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 350px;
+		width: 80%;
+	}
+	
+	#two-corinth-text-9{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 400px;
+		width: 80%;
+	}
+	
+	#image-corinth-it-is-well{
+		position: fixed;
+		top: 350px;
+		right: 10%;
+		width: 300px;
+		display: none;
+	}
+	
+	#two-corinth-text-10{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 450px;
+		width: 80%;
+	}
+	
+	#two-corinth-text-11{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 500px;
+		width: 80%;
+	}
+	
+	#two-corinth-text-12{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 550px;
+		width: 80%;
+	}
+	
+	#image-corinth-vision{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 300px;
+		display: none;
+	}
+	
+	#two-corinth-text-13{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 600px;
+		width: 80%;
+		padding-bottom: 150px;
+	}
+	
+	#two-corinth-all-text{
+		position: absolute;
+		top: 300px;
+		left: 35%;
+		z-index: -.1;
+	}
+	
+	#two-corinth-images-opinion img{
+		width: 500px;
+		padding-bottom: 20px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	
+	#two-corinth-images-opinion h1{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: justify;
+		padding: 20px;
+		color: rgb(53, 59, 65);
+	}
+	
+	#two-corinth-images-opinion{
+		width: 540px;
+		position: absolute;
+		top: 300px;
+		left: 30%;
+		background-color: rgb(245, 246, 246);
+		border: dashed 1px rgb(82, 173, 160);
+		display: none;
+	}
+	
+	/* galatians style */
+	#galatians-title-center{
+		position: absolute;
+		top: 150px;
+		left: 30%;
+	}
+	
+	#galatians-title{
+		font-family: skolar-latin, serif;
+		text-shadow: 
+		-1px -1px 0 rgb(196, 154, 108),
+		1px -1px 0  rgb(196, 154, 108),
+		-1px 1px 0 rgb(196, 154, 108),
+		1px 1px 0 rgb(196, 154, 108);
+		font-weight: 400;
+		color: rgb(245, 246, 246);
+		font-size: 100px;
+	}
+	
+	#galatians-chapters{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(82, 173, 160);
+		font-size: 140px;
+		position: absolute;
+		top: -40px;
+		left: 110%;
+		cursor: pointer;
+	}
+	
+	#galatians-dropdown-menu{
+		position: relative;
+		top: 0px;
+		left: 55%;
+		width: 400px;
+		display: none;
+		z-index: 1;
+	}
+	
+	#galatians-dropdown-menu span{
+		padding: 15px;
+		display: inline-block;
+		border: rgb(82, 173, 160) 1px solid;
+		background-color: rgb(245, 246, 246);
+	}
+	
+	#galatians-dropdown-menu h1{
+		font-family: video, serif;
+		color: rgb(82, 173, 160);
+	}
+	
+	#galatians-chapters-mobile{
+		display: none;
+	}
+	
+	#galatians-map{
+		display: none;
+	}
+	
+	#galatians-service{
+		display: none;
+	}
+	
+	#galatians-service{
+		display: none;
+	}
+	
+	#galatians-foolish-law{
+		display: none;
+	}
+	
+	#galatians-blind-man{
+		display: none;
+	}
+	
+	#galatians-freedom-christ{
+		display: none;
+	}
+	
+	#galatians-blessing{
+		display: none;
+	}
+	
+	#galatians-text-1{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 0px;
+		width: 80%;
+	}
+	
+	#inter-galatians-know-christ{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 300px;
+		background-color: rgb(245, 246, 246);
+		border: rgb(82, 173, 160) 1px solid;
+		padding: 20px;
+		display: none;
+	}
+	
+	#inter-galatians-know-christ h1{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: justify;
+		padding: 20px;
+		color: rgb(53, 59, 65);
+	}
+	
+	#inter-galatians-know-christ h2{
+		font-family: video, sans-serif;
+		font-weight: 400;
+		font-size: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		color: rgb(82, 173, 160);
+		display: inline-block;
+		margin-left: 20px;
+	}
+	
+	#inter-galatians-know-christ h2:hover{
+		border: rgb(82, 173, 160) 1px dashed;
+	}
+	
+	.inter-galatians-know-christ-select{
+		background-color: rgb(82, 173, 160);
+	}
+	
+	#galatians-text-2{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 50px;
+		width: 80%;
+	}
+	
+	#image-galatians-trapped{
+		position: fixed;
+		top: 350px;
+		right: 10%;
+		width: 300px;
+		display: none;
+	}
+	
+	#image-galatians-liberty{
+		position: fixed;
+		top: 350px;
+		right: 10%;
+		width: 300px;
+		display: none;
+	}
+	
+	#galatians-text-3{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 100px;
+		width: 80%;
+	}
+	
+	#inter-galatians-good-works{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 300px;
+		background-color: rgb(245, 246, 246);
+		border: rgb(82, 173, 160) 1px solid;
+		padding: 20px;
+		display: none;
+	}
+	
+	#inter-galatians-good-works h1{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: justify;
+		padding: 20px;
+		color: rgb(53, 59, 65);
+	}
+	
+	#inter-galatians-good-works h2{
+		font-family: video, sans-serif;
+		font-weight: 400;
+		font-size: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		color: rgb(82, 173, 160);
+		display: inline-block;
+		margin-left: 20px;
+	}
+	
+	#inter-galatians-good-works h2:hover{
+		border: rgb(82, 173, 160) 1px dashed;
+	}
+	
+	#inter-galatians-good-works-select{
+		background-color: rgb(82, 173, 160);
+	}
+	
+	#galatians-text-4{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 150px;
+		width: 80%;
+	}
+	
+	#galatians-text-5{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 200px;
+		width: 80%;
+	}
+	
+	#inter-galatians-heaven{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 300px;
+		background-color: rgb(245, 246, 246);
+		border: rgb(82, 173, 160) 1px solid;
+		padding: 20px;
+		display: none;
+	}
+	
+	#inter-galatians-heaven h1{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: justify;
+		color: rgb(53, 59, 65);
+	}
+	
+	#inter-galatians-heaven form{
+		padding-top: 15px;
+	}
+	
+	#inter-galatians-heaven textarea{
+		font-family: skolar-latin, serif;
+		font-size: 16px;
+		width: 250px;
+		height: 100px;
+		resize: none;
+	}
+	
+	#image-galatians-whodoyou{
+		position: fixed;
+		top: 350px;
+		right: 10%;
+		width: 300px;
+		display: none;
+	}
+	
+	#galatians-text-6{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 250px;
+		width: 80%;
+		padding-bottom: 150px;
+	}
+	
+	#image-galatians-wall{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 300px;
+		display: none;
+	}
+	
+	#galatians-images-opinion img{
+		width: 500px;
+		padding-bottom: 20px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	
+	#galatians-images-opinion h1{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: justify;
+		padding: 20px;
+		color: rgb(53, 59, 65);
+	}
+	
+	#galatians-images-opinion{
+		width: 540px;
+		position: absolute;
+		top: 300px;
+		left: 30%;
+		background-color: rgb(245, 246, 246);
+		border: dashed 1px rgb(82, 173, 160);
+		display: none;
+	}
+	
+	#galatians-all-text{
+		position: absolute;
+		top: 300px;
+		left: 35%;
+		z-index: -.1;
+	}
+	
+	/* ephesians style */
+	#ephesis-title-center{
+		position: absolute;
+		top: 150px;
+		left: 30%;
+	}
+	
+	#ephesis-title{
+		font-family: skolar-latin, serif;
+		text-shadow: 
+		-1px -1px 0 rgb(196, 154, 108),
+		1px -1px 0  rgb(196, 154, 108),
+		-1px 1px 0 rgb(196, 154, 108),
+		1px 1px 0 rgb(196, 154, 108);
+		font-weight: 400;
+		color: rgb(245, 246, 246);
+		font-size: 100px;
+	}
+	
+	#ephesis-chapters{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(82, 173, 160);
+		font-size: 140px;
+		position: absolute;
+		top: -40px;
+		left: 110%;
+		cursor: pointer;
+	}
+	
+	#ephesis-dropdown-menu{
+		position: relative;
+		top: 0px;
+		left: 55%;
+		width: 400px;
+		display: none;
+		z-index: 1;
+	}
+	
+	#ephesis-dropdown-menu span{
+		padding: 15px;
+		display: inline-block;
+		border: rgb(82, 173, 160) 1px solid;
+		background-color: rgb(245, 246, 246);
+	}
+	
+	#ephesis-dropdown-menu h1{
+		font-family: video, serif;
+		color: rgb(82, 173, 160);
+	}
+	
+	#ephesis-chapters-mobile{
+		display: none;
+	}
+	
+	#ephesis-map{
+		display: none;
+	}
+	
+	#ephesis-text-1{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 0px;
+		width: 80%;
+	}
+	
+	#image-ephesis-building{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 300px;
+		display: none;
+	}
+	
+	#site-ephesis-redeemer{
+		position: fixed;
+		top: 350px;
+		right: 10%;
+		width: 300px;
+		display: none;
+	}
+	
+	#ephesis-alive-christ{
+		display: none;
+	}
+	
+	#ephesis-text-2{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 50px;
+		width: 80%;
+	}
+	
+	#image-ephesis-church{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 300px;
+		display: none;
+	}
+	
+	#ephesis-gods-plan{
+		display: none;
+	}
+	
+	#ephesis-text-3{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 100px;
+		width: 80%;
+	}
+	
+	#image-ephesis-gentiles{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 600px;
+		display: none;
+	}
+	
+	#ephesis-unity-christ{
+		display: none;
+	}
+	
+	#ephesis-text-4{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 150px;
+		width: 80%;
+	}
+	
+	#image-ephesis-body{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 500px;
+		display: none;
+	}
+	
+	#ephesis-light-world{
+		display: none;
+	}
+	
+	#ephesis-text-5{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 200px;
+		width: 80%;
+	}
+	
+	#site-ephesis-news{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		display: none;
+	}
+	
+	#ephesis-blessing{
+		display: none;
+	}
+	
+	#ephesis-text-6{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 250px;
+		width: 80%;
+		padding-bottom: 150px;
+	}
+	
+	#ephesis-images-opinion img{
+		width: 500px;
+		padding-bottom: 20px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	
+	#ephesis-images-opinion h1{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: justify;
+		padding: 20px;
+		color: rgb(53, 59, 65);
+	}
+	
+	#ephesis-images-opinion{
+		width: 540px;
+		position: absolute;
+		top: 300px;
+		left: 30%;
+		background-color: rgb(245, 246, 246);
+		border: dashed 1px rgb(82, 173, 160);
+		display: none;
+	}
+	
+	#ephesis-all-text{
+		position: absolute;
+		top: 300px;
+		left: 35%;
+		z-index: -.1;
+	}
+	
+	/* philippians style */
+	#philippi-title-center{
+		position: absolute;
+		top: 150px;
+		left: 30%;
+	}
+	
+	#philippi-title{
+		font-family: skolar-latin, serif;
+		text-shadow: 
+		-1px -1px 0 rgb(196, 154, 108),
+		1px -1px 0  rgb(196, 154, 108),
+		-1px 1px 0 rgb(196, 154, 108),
+		1px 1px 0 rgb(196, 154, 108);
+		font-weight: 400;
+		color: rgb(245, 246, 246);
+		font-size: 100px;
+	}
+	
+	#philippi-chapters{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(82, 173, 160);
+		font-size: 140px;
+		position: absolute;
+		top: -40px;
+		left: 110%;
+		cursor: pointer;
+	}
+	
+	#philippi-dropdown-menu{
+		position: relative;
+		top: 0px;
+		left: 75%;
+		width: 400px;
+		display: none;
+		z-index: 1;
+	}
+	
+	#philippi-dropdown-menu span{
+		padding: 15px;
+		display: inline-block;
+		border: rgb(82, 173, 160) 1px solid;
+		background-color: rgb(245, 246, 246);
+	}
+	
+	#philippi-dropdown-menu h1{
+		font-family: video, serif;
+		color: rgb(82, 173, 160);
+	}
+	
+	#philippi-chapters-mobile{
+		display: none;
+	}
+	
+	#philippi-map{
+		display: none;
+	}
+	
+	#philippi-humble{
+		display: none;
+	}
+	
+	#philippi-confidence-christ{
+		display: none;
+	}
+	
+	#philippi-blessing{
+		display: none;
+	}
+	
+	#philippi-text-1{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 0px;
+		width: 80%;
+	}
+	
+	#image-philippi-testament{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 300px;
+		display: none;
+	}
+	
+	#philippi-text-2{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 50px;
+		width: 80%;
+	}
+	
+	#inter-philippi-favorite{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 300px;
+		background-color: rgb(245, 246, 246);
+		border: rgb(82, 173, 160) 1px solid;
+		padding: 20px;
+		display: none;
+	}
+	
+	#inter-philippi-favorite h1{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: justify;
+		color: rgb(53, 59, 65);
+	}
+	
+	#inter-philippi-favorite form{
+		padding-top: 15px;
+	}
+	
+	#inter-philippi-favorite textarea{
+		font-family: skolar-latin, serif;
+		font-size: 16px;
+		width: 250px;
+		height: 100px;
+		resize: none;
+	}
+	
+	#image-philippi-children{
+		position: fixed;
+		top: 350px;
+		right: 10%;
+		width: 300px;
+		display: none;
+	}
+	
+	#philippi-text-3{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 100px;
+		width: 80%;
+	}
+	
+	#image-philippi-awake{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 300px;
+		display: none;
+	}
+	
+	#image-philippi-earth{
+		position: fixed;
+		top: 350px;
+		right: 10%;
+		width: 300px;
+		display: none;
+	}
+	
+	#philippi-text-4{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 150px;
+		width: 80%;
+		padding-bottom: 150px;
+	}
+	
+	#inter-philippi-rejoice{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 300px;
+		background-color: rgb(245, 246, 246);
+		border: rgb(82, 173, 160) 1px solid;
+		padding: 20px;
+		display: none;
+	}
+	
+	#inter-philippi-rejoice h1{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: justify;
+		color: rgb(53, 59, 65);
+	}
+	
+	#inter-philippi-rejoice h2{
+		font-family: video, sans-serif;
+		font-weight: 400;
+		font-size: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		color: rgb(82, 173, 160);
+		width: 120px;
+		margin-top: 10px;
+	}
+	
+	#inter-philippi-rejoice h2:hover{
+		border: rgb(82, 173, 160) 1px dashed;
+	}
+	
+	.inter-philippi-rejoice-select{
+		background-color: rgb(82, 173, 160);
+	}
+	
+	#image-philippi-orange{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 350px;
+		display: none;
+	}
+	
+	#philippi-images-opinion img{
+		width: 500px;
+		padding-bottom: 20px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	
+	#philippi-images-opinion h1{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: justify;
+		padding: 20px;
+		color: rgb(53, 59, 65);
+	}
+	
+	#philippi-images-opinion{
+		width: 540px;
+		position: absolute;
+		top: 300px;
+		left: 30%;
+		background-color: rgb(245, 246, 246);
+		border: dashed 1px rgb(82, 173, 160);
+		display: none;
+	}
+	
+	#philippi-all-text{
+		position: absolute;
+		top: 300px;
+		left: 35%;
+		z-index: -.1;
+	}
+	
+	/* colossians style */
+	#colossians-title-center{
+		position: absolute;
+		top: 150px;
+		left: 30%;
+	}
+	
+	#colossians-title{
+		font-family: skolar-latin, serif;
+		text-shadow: 
+		-1px -1px 0 rgb(196, 154, 108),
+		1px -1px 0  rgb(196, 154, 108),
+		-1px 1px 0 rgb(196, 154, 108),
+		1px 1px 0 rgb(196, 154, 108);
+		font-weight: 400;
+		color: rgb(245, 246, 246);
+		font-size: 100px;
+	}
+	
+	#colossians-chapters{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(82, 173, 160);
+		font-size: 140px;
+		position: absolute;
+		top: -40px;
+		left: 110%;
+		cursor: pointer;
+	}
+	
+	#colossians-dropdown-menu{
+		position: relative;
+		top: 0px;
+		left: 75%;
+		width: 400px;
+		display: none;
+		z-index: 1;
+	}
+	
+	#colossians-dropdown-menu span{
+		padding: 15px;
+		display: inline-block;
+		border: rgb(82, 173, 160) 1px solid;
+		background-color: rgb(245, 246, 246);
+	}
+	
+	#colossians-dropdown-menu h1{
+		font-family: video, serif;
+		color: rgb(82, 173, 160);
+	}
+	
+	#colossians-chapters-mobile{
+		display: none;
+	}
+	
+	#colossians-map{
+		display: none;
+	}
+	
+	#colossians-fullness-christ{
+		display: none;
+	}
+	
+	#colossians-alive-christ{
+		display: none;
+	}
+	
+	#colossians-blessing{
+		display: none;
+	}
+	
+	#colossians-text-1{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 0px;
+		width: 80%;
+	}
+	
+	#image-colossians-haveme{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 350px;
+		display: none;
+	}
+	
+	#inter-colossians-growing{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 300px;
+		background-color: rgb(245, 246, 246);
+		border: rgb(82, 173, 160) 1px solid;
+		padding: 20px;
+		display: none;
+	}
+	
+	#inter-colossians-growing h1{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: justify;
+		color: rgb(53, 59, 65);
+	}
+	
+	#inter-colossians-growing h2{
+		font-family: video, sans-serif;
+		font-weight: 400;
+		font-size: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		color: rgb(82, 173, 160);
+		display: inline-block;
+		margin-top: 10px;
+	}
+	
+	#inter-colossians-growing h2:hover{
+		border: rgb(82, 173, 160) 1px dashed;
+	}
+	
+	.inter-colossians-growing-select{
+		background-color: rgb(82, 173, 160);
+	}
+	
+	#image-colossians-sunset{
+		position: fixed;
+		top: 350px;
+		right: 10%;
+		width: 350px;
+		display: none;
+	}
+	
+	#colossians-text-2{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 50px;
+		width: 80%;
+	}
+	
+	#image-colossians-vine{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 350px;
+		display: none;
+	}
+	
+	#image-colossians-human{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 350px;
+		display: none;
+	}
+	
+	#colossians-text-3{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 100px;
+		width: 80%;
+	}
+	
+	#inter-colossians-new{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 300px;
+		background-color: rgb(245, 246, 246);
+		border: rgb(82, 173, 160) 1px solid;
+		padding: 20px;
+		display: none;
+	}
+	
+	#inter-colossians-new h1{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: justify;
+		color: rgb(53, 59, 65);
+	}
+	
+	#inter-colossians-new form{
+		padding-top: 15px;
+	}
+	
+	#inter-colossians-new textarea{
+		font-family: skolar-latin, serif;
+		font-size: 16px;
+		width: 250px;
+		height: 100px;
+		resize: none;
+	}
+	
+	#image-colossians-stumble{
+		position: fixed;
+		top: 350px;
+		right: 10%;
+		width: 300px;
+		display: none;
+	}
+	
+	#colossians-text-4{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 150px;
+		width: 80%;
+		padding-bottom: 150px;
+	}
+	
+	#colossians-images-opinion img{
+		width: 500px;
+		padding-bottom: 20px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	
+	#colossians-images-opinion h1{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: justify;
+		padding: 20px;
+		color: rgb(53, 59, 65);
+	}
+	
+	#colossians-images-opinion{
+		width: 540px;
+		position: absolute;
+		top: 300px;
+		left: 30%;
+		background-color: rgb(245, 246, 246);
+		border: dashed 1px rgb(82, 173, 160);
+		display: none;
+	}
+	
+	#colossians-all-text{
+		position: absolute;
+		top: 300px;
+		left: 35%;
+		z-index: -.1;
+	}
+	
+	/* 1 thessalonians style */
+	#one-thess-title-center{
+		position: absolute;
+		top: 150px;
+		left: 15%;
+	}
+	
+	#one-thess-title{
+		font-family: skolar-latin, serif;
+		text-shadow: 
+		-1px -1px 0 rgb(196, 154, 108),
+		1px -1px 0  rgb(196, 154, 108),
+		-1px 1px 0 rgb(196, 154, 108),
+		1px 1px 0 rgb(196, 154, 108);
+		font-weight: 400;
+		color: rgb(245, 246, 246);
+		font-size: 100px;
+		width: 870px;
+	}
+	
+	#one-thess-chapters{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(82, 173, 160);
+		font-size: 140px;
+		position: absolute;
+		top: -40px;
+		left: 108%;
+		cursor: pointer;
+	}
+	
+	#one-thess-dropdown-menu{
+		position: relative;
+		top: 0px;
+		left: 75%;
+		width: 400px;
+		display: none;
+		z-index: 1;
+	}
+	
+	#one-thess-dropdown-menu span{
+		padding: 15px;
+		display: inline-block;
+		border: rgb(82, 173, 160) 1px solid;
+		background-color: rgb(245, 246, 246);
+	}
+	
+	#one-thess-dropdown-menu h1{
+		font-family: video, serif;
+		color: rgb(82, 173, 160);
+	}
+	
+	#one-thess-chapters-mobile{
+		display: none;
+	}
+	
+	#one-thess-map{
+		display: none;
+	}
+	
+	#one-thess-text-1{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 0px;
+		width: 80%;
+	}
+	
+	#one-thess-books-ministry{
+		display: none;
+	}
+	
+	#one-thess-text-2{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 50px;
+		width: 80%;
+	}
+	
+	#site-thess-today{
+		position: fixed;
+		top: 350px;
+		right: 10%;
+		display: none;
+	}
+	
+	#one-thess-persecute-prison{
+		display: none;
+	}
+	
+	#one-thess-text-3{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 100px;
+		width: 80%;
+	}
+	
+	#site-thess-chinaaid{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		display: none;
+	}
+	
+	#image-thess-persecute{
+		position: fixed;
+		top: 350px;
+		right: 10%;
+		width: 350px;
+		display: none;
+	}
+	
+	#one-thess-pray-trust{
+		display: none;
+	}
+	
+	#one-thess-text-4{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 150px;
+		width: 80%;
+	}
+	
+	#site-thess-post{
+		position: fixed;
+		top: 350px;
+		right: 10%;
+		display: none;
+	}
+	
+	#one-thess-blessing{
+		display: none;
+	}
+	
+	#one-thess-text-5{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 200px;
+		width: 80%;
+		padding-bottom: 150px;
+	}
+	
+	#image-thess-christ{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 350px;
+		display: none;
+	}
+	
+	#one-thess-images-opinion img{
+		width: 500px;
+		padding-bottom: 20px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	
+	#one-thess-images-opinion h1{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: justify;
+		padding: 20px;
+		color: rgb(53, 59, 65);
+	}
+	
+	#one-thess-images-opinion{
+		width: 540px;
+		position: absolute;
+		top: 300px;
+		left: 30%;
+		background-color: rgb(245, 246, 246);
+		border: dashed 1px rgb(82, 173, 160);
+		display: none;
+	}
+	
+	#one-thess-all-text{
+		position: absolute;
+		top: 300px;
+		left: 35%;
+		z-index: -.1;
+	}
+	
+	/* 2 thessalonians style */
+	#two-thess-title-center{
+		position: absolute;
+		top: 150px;
+		left: 15%;
+	}
+	
+	#two-thess-title{
+		font-family: skolar-latin, serif;
+		text-shadow: 
+		-1px -1px 0 rgb(196, 154, 108),
+		1px -1px 0  rgb(196, 154, 108),
+		-1px 1px 0 rgb(196, 154, 108),
+		1px 1px 0 rgb(196, 154, 108);
+		font-weight: 400;
+		color: rgb(245, 246, 246);
+		font-size: 100px;
+		width: 880px;
+	}
+	
+	#two-thess-chapters{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(82, 173, 160);
+		font-size: 140px;
+		position: absolute;
+		top: -40px;
+		left: 108%;
+		cursor: pointer;
+	}
+	
+	#two-thess-dropdown-menu{
+		position: relative;
+		top: 0px;
+		left: 85%;
+		width: 400px;
+		display: none;
+		z-index: 1;
+	}
+	
+	#two-thess-dropdown-menu span{
+		padding: 15px;
+		display: inline-block;
+		border: rgb(82, 173, 160) 1px solid;
+		background-color: rgb(245, 246, 246);
+	}
+	
+	#two-thess-dropdown-menu h1{
+		font-family: video, serif;
+		color: rgb(82, 173, 160);
+	}
+	
+	#two-thess-chapters-mobile{
+		display: none;
+	}
+	
+	#two-thess-map{
+		display: none;
+	}
+	
+	#two-thess-persecution{
+		display: none;
+	}
+	
+	#two-thess-blessing{
+		display: none;
+	}
+	
+	#two-thess-text-1{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 0px;
+		width: 80%;
+	}
+	
+	#site-thess-society{
+		position: fixed;
+		top: 350px;
+		width: 450px;
+		left: 30%;
+		display: none;
+	}
+	
+	#two-thess-text-2{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 50px;
+		width: 80%;
+	}
+	
+	#image-thess-misunderstood{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 350px;
+		display: none;
+	}
+	
+	#image-thess-jew{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 300px;
+		display: none;
+	}
+	
+	#image-thess-flat{
+		position: fixed;
+		top: 350px;
+		right: 10%;
+		width: 400px;
+		display: none;
+	}
+	
+	#two-thess-text-3{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 100px;
+		width: 80%;
+		padding-bottom: 150px;
+	}
+	
+	#image-thess-prayer{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 350px;
+		display: none;
+	}
+	
+	#two-thess-images-opinion img{
+		width: 500px;
+		padding-bottom: 20px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	
+	#two-thess-images-opinion h1{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: justify;
+		padding: 20px;
+		color: rgb(53, 59, 65);
+	}
+	
+	#two-thess-images-opinion{
+		width: 540px;
+		position: absolute;
+		top: 300px;
+		left: 30%;
+		background-color: rgb(245, 246, 246);
+		border: dashed 1px rgb(82, 173, 160);
+		display: none;
+	}
+	
+	#two-thess-all-text{
+		position: absolute;
+		top: 300px;
+		left: 35%;
+		z-index: -.1;
+	}
+	
+	/* 1 timothy style */
+	#one-timothy-title-center{
+		position: absolute;
+		top: 150px;
+		left: 30%;
+	}
+	
+	#one-timothy-title{
+		font-family: skolar-latin, serif;
+		text-shadow: 
+		-1px -1px 0 rgb(196, 154, 108),
+		1px -1px 0  rgb(196, 154, 108),
+		-1px 1px 0 rgb(196, 154, 108),
+		1px 1px 0 rgb(196, 154, 108);
+		font-weight: 400;
+		color: rgb(245, 246, 246);
+		font-size: 100px;
+	}
+	
+	#one-timothy-chapters{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(82, 173, 160);
+		font-size: 140px;
+		position: absolute;
+		top: -40px;
+		left: 110%;
+		cursor: pointer;
+	}
+	
+	#one-timothy-dropdown-menu{
+		position: relative;
+		top: 0px;
+		left: 65%;
+		width: 400px;
+		display: none;
+		z-index: 1;
+	}
+	
+	#one-timothy-dropdown-menu span{
+		padding: 15px;
+		display: inline-block;
+		border: rgb(82, 173, 160) 1px solid;
+		background-color: rgb(245, 246, 246);
+	}
+	
+	#one-timothy-dropdown-menu h1{
+		font-family: video, serif;
+		color: rgb(82, 173, 160);
+	}
+	
+	#one-timothy-chapters-mobile{
+		display: none;
+	}
+	
+	#one-timothy-map{
+		display: none;
+	}
+	
+	#one-timothy-worship{
+		display: none;
+	}
+	
+	#one-timothy-leaders{
+		display: none;
+	}
+	
+	#one-timothy-false-teachers{
+		display: none;
+	}
+	
+	#one-timothy-shout-jesus{
+		display: none;
+	}
+	
+	#one-timothy-blessing{
+		display: none;
+	}
+	
+	#one-timothy-text-1{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 0px;
+		width: 80%;
+	}
+	
+	#one-timothy-text-2{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 50px;
+		width: 80%;
+	}
+	
+	#image-tim-breath{
+		position: fixed;
+		top: 300px;
+		left: 30%;
+		width: 300px;
+		display: none;
+	}
+	
+	#one-timothy-text-3{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 100px;
+		width: 80%;
+	}
+	
+	#inter-tim-missions{
+		position: fixed;
+		top: 350px;
+		right: 10%;
+		width: 300px;
+		background-color: rgb(245, 246, 246);
+		border: rgb(82, 173, 160) 1px solid;
+		padding: 20px;
+		display: none;
+	}
+	
+	#inter-tim-missions h1{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: justify;
+		color: rgb(53, 59, 65);
+	}
+	
+	#inter-tim-missions h2{
+		font-family: video, sans-serif;
+		font-weight: 400;
+		font-size: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		color: rgb(82, 173, 160);
+		display: inline-block;
+		margin-top: 10px;
+	}
+	
+	#inter-tim-missions h2:hover{
+		border: rgb(82, 173, 160) 1px dashed;
+	}
+	
+	.inter-tim-missions-select{
+		background-color: rgb(82, 173, 160);
+	}
+	
+	#one-timothy-text-4{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 150px;
+		width: 80%;
+	}
+	
+	#image-tim-awaken{
+		position: fixed;
+		top: 300px;
+		left: 30%;
+		width: 300px;
+		display: none;
+	}
+	
+	#image-tim-ideas{
+		position: fixed;
+		top: 300px;
+		right: 10%;
+		width: 400px;
+		display: none;
+	}
+	
+	#one-timothy-text-5{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 200px;
+		width: 80%;
+	}
+	
+	#one-timothy-text-6{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 250px;
+		width: 80%;
+		padding-bottom: 150px;
+	}
+	
+	#site-tim-filter{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		display: none;
+	}
+	
+	#image-tim-light{
+		position: fixed;
+		top: 300px;
+		right: 10%;
+		width: 350px;
+		display: none;
+	}
+	
+	#inter-tim-share{
+		position: fixed;
+		top: 350px;
+		right: 10%;
+		width: 300px;
+		background-color: rgb(245, 246, 246);
+		border: rgb(82, 173, 160) 1px solid;
+		padding: 20px;
+		display: none;
+	}
+	
+	#inter-tim-share h1{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: justify;
+		color: rgb(53, 59, 65);
+	}
+	
+	#inter-tim-share h2{
+		font-family: video, sans-serif;
+		font-weight: 400;
+		font-size: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		color: rgb(82, 173, 160);
+		display: inline-block;
+		margin-top: 10px;
+	}
+	
+	#inter-tim-share h2:hover{
+		border: rgb(82, 173, 160) 1px dashed;
+	}
+	
+	.inter-tim-share-select{
+		background-color: rgb(82, 173, 160);
+	}
+	
+	#one-timothy-images-opinion img{
+		width: 500px;
+		padding-bottom: 20px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	
+	#one-timothy-images-opinion h1{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: justify;
+		padding: 20px;
+		color: rgb(53, 59, 65);
+	}
+	
+	#one-timothy-images-opinion{
+		width: 540px;
+		position: absolute;
+		top: 300px;
+		left: 30%;
+		background-color: rgb(245, 246, 246);
+		border: dashed 1px rgb(82, 173, 160);
+		display: none;
+	}
+	
+	#one-timothy-all-text{
+		position: absolute;
+		top: 300px;
+		left: 35%;
+		z-index: -.1;
+	}
+	
+	/* 2 timothy style */
+	#two-timothy-title-center{
+		position: absolute;
+		top: 150px;
+		left: 30%;
+	}
+	
+	#two-timothy-title{
+		font-family: skolar-latin, serif;
+		text-shadow: 
+		-1px -1px 0 rgb(196, 154, 108),
+		1px -1px 0  rgb(196, 154, 108),
+		-1px 1px 0 rgb(196, 154, 108),
+		1px 1px 0 rgb(196, 154, 108);
+		font-weight: 400;
+		color: rgb(245, 246, 246);
+		font-size: 100px;
+	}
+	
+	#two-timothy-chapters{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(82, 173, 160);
+		font-size: 140px;
+		position: absolute;
+		top: -40px;
+		left: 110%;
+		cursor: pointer;
+	}
+	
+	#two-timothy-dropdown-menu{
+		position: relative;
+		top: 0px;
+		left: 75%;
+		width: 400px;
+		display: none;
+		z-index: 1;
+	}
+	
+	#two-timothy-dropdown-menu span{
+		padding: 15px;
+		display: inline-block;
+		border: rgb(82, 173, 160) 1px solid;
+		background-color: rgb(245, 246, 246);
+	}
+	
+	#two-timothy-dropdown-menu h1{
+		font-family: video, serif;
+		color: rgb(82, 173, 160);
+	}
+	
+	#two-timothy-chapters-mobile{
+		display: none;
+	}
+	
+	#two-timothy-map{
+		display: none;
+	}
+	
+	#two-timothy-assurance{
+		display: none;
+	}
+	
+	#two-timothy-final-days{
+		display: none;
+	}
+	
+	#two-timothy-final-days{
+		display: none;
+	}
+	
+	#two-timothy-blessing{
+		display: none;
+	}
+	
+	#two-timothy-text-1{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 0px;
+		width: 80%;
+	}
+	
+	#image-tim-havefaith{
+		position: fixed;
+		top: 300px;
+		left: 30%;
+		width: 350px;
+		display: none;
+	}
+	
+	#image-tim-justas{
+		position: fixed;
+		top: 300px;
+		left: 30%;
+		width: 300px;
+		display: none;
+	}
+	
+	#two-timothy-text-2{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 50px;
+		width: 80%;
+	}
+	
+	#inter-tim-accept{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 300px;
+		background-color: rgb(245, 246, 246);
+		border: rgb(82, 173, 160) 1px solid;
+		padding: 20px;
+		display: none;
+	}
+	
+	#inter-tim-accept h1{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: justify;
+		color: rgb(53, 59, 65);
+	}
+	
+	#inter-tim-accept form{
+		padding-top: 15px;
+	}
+	
+	#inter-tim-accept textarea{
+		font-family: skolar-latin, serif;
+		font-size: 16px;
+		width: 250px;
+		height: 100px;
+		resize: none;
+	}
+	
+	#image-tim-faithful{
+		position: fixed;
+		top: 300px;
+		left: 30%;
+		width: 600px;
+		display: none;
+	}
+	
+	#inter-tim-work{
+		position: fixed;
+		top: 350px;
+		right: 10%;
+		width: 300px;
+		background-color: rgb(245, 246, 246);
+		border: rgb(82, 173, 160) 1px solid;
+		padding: 20px;
+		display: none;
+	}
+	
+	#inter-tim-work h1{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: justify;
+		color: rgb(53, 59, 65);
+	}
+	
+	#inter-tim-work form{
+		padding-top: 15px;
+	}
+	
+	#inter-tim-work textarea{
+		font-family: skolar-latin, serif;
+		font-size: 16px;
+		width: 250px;
+		height: 100px;
+		resize: none;
+	}
+	
+	#image-tim-wheremind{
+		position: fixed;
+		top: 300px;
+		right: 10%;
+		width: 300px;
+		display: none;
+	}
+	
+	#two-timothy-text-3{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 100px;
+		width: 80%;
+	}
+	
+	#image-tim-nograve{
+		position: fixed;
+		top: 300px;
+		right: 10%;
+		width: 300px;
+		display: none;
+	}
+	
+	#two-timothy-text-4{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 150px;
+		width: 80%;
+		padding-bottom: 150px;
+	}
+	
+	#inter-tim-remain{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 300px;
+		background-color: rgb(245, 246, 246);
+		border: rgb(82, 173, 160) 1px solid;
+		padding: 20px;
+		display: none;
+	}
+	
+	#inter-tim-remain h1{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: justify;
+		color: rgb(53, 59, 65);
+	}
+	
+	#inter-tim-remain form{
+		padding-top: 15px;
+	}
+	
+	#inter-tim-remain textarea{
+		font-family: skolar-latin, serif;
+		font-size: 16px;
+		width: 250px;
+		height: 100px;
+		resize: none;
+	}
+	
+	#two-timothy-images-opinion img{
+		width: 500px;
+		padding-bottom: 20px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	
+	#two-timothy-images-opinion h1{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: justify;
+		padding: 20px;
+		color: rgb(53, 59, 65);
+	}
+	
+	#two-timothy-images-opinion{
+		width: 540px;
+		position: absolute;
+		top: 300px;
+		left: 30%;
+		background-color: rgb(245, 246, 246);
+		border: dashed 1px rgb(82, 173, 160);
+		display: none;
+	}
+	
+	#two-timothy-all-text{
+		position: absolute;
+		top: 300px;
+		left: 35%;
+		z-index: -.1;
+	}
+	
+	/* titus style */
+	#titus-title-center{
+		position: absolute;
+		top: 150px;
+		left: 30%;
+	}
+	
+	#titus-title{
+		font-family: skolar-latin, serif;
+		text-shadow: 
+		-1px -1px 0 rgb(196, 154, 108),
+		1px -1px 0  rgb(196, 154, 108),
+		-1px 1px 0 rgb(196, 154, 108),
+		1px 1px 0 rgb(196, 154, 108);
+		font-weight: 400;
+		color: rgb(245, 246, 246);
+		font-size: 100px;
+	}
+	
+	#titus-chapters{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(82, 173, 160);
+		font-size: 140px;
+		position: absolute;
+		top: -40px;
+		left: 115%;
+		cursor: pointer;
+	}
+	
+	#titus-dropdown-menu{
+		position: relative;
+		top: 0px;
+		left: 65%;
+		width: 200px;
+		display: none;
+		z-index: 1;
+	}
+	
+	#titus-dropdown-menu span{
+		padding: 15px;
+		display: inline-block;
+		border: rgb(82, 173, 160) 1px solid;
+		background-color: rgb(245, 246, 246);
+	}
+	
+	#titus-dropdown-menu h1{
+		font-family: video, serif;
+		color: rgb(82, 173, 160);
+	}
+	
+	#titus-chapters-mobile{
+		display: none;
+	}
+	
+	#titus-map{
+		display: none;
+	}
+
+	#titus-good-gospel{
+		display: none;
+	}
+	
+	#titus-blessing{
+		display: none;
+	}
+	
+	#titus-text-1{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 0px;
+		width: 80%;
+	}
+	
+	#image-titus-leader{
+		position: fixed;
+		top: 300px;
+		left: 30%;
+		width: 350px;
+		display: none;
+	}
+	
+	#site-titus-elevate{
+		position: fixed;
+		top: 300px;
+		left: 30%;
+		display: none;
+	}
+	
+	#titus-text-2{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 50px;
+		width: 80%;
+	}
+	
+	#site-titus-village{
+		position: fixed;
+		top: 300px;
+		left: 30%;
+		display: none;
+	}
+	
+	#site-titus-bible{
+		position: fixed;
+		top: 300px;
+		right: 10%;
+		display: none;
+	}
+	
+	#titus-text-3{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		width: 800px;
+		text-align: justify;
+		column-count: 2;
+		column-gap: 40px;
+		position: relative;
+		top: 100px;
+		width: 80%;
+		padding-bottom: 150px;
+	}
+	
+	#inter-titus-lookup{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 300px;
+		background-color: rgb(245, 246, 246);
+		border: rgb(82, 173, 160) 1px solid;
+		padding: 20px;
+		display: none;
+	}
+	
+	#inter-titus-lookup h1{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: justify;
+		color: rgb(53, 59, 65);
+	}
+	
+	#inter-titus-lookup form{
+		padding-top: 15px;
+	}
+	
+	#inter-titus-lookup textarea{
+		font-family: skolar-latin, serif;
+		font-size: 16px;
+		width: 250px;
+		height: 100px;
+		resize: none;
+	}
+	
+	#inter-titus-gifts{
+		position: fixed;
+		top: 350px;
+		left: 30%;
+		width: 300px;
+		background-color: rgb(245, 246, 246);
+		border: rgb(82, 173, 160) 1px solid;
+		padding: 20px;
+		display: none;
+	}
+	
+	#inter-titus-gifts h1{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: justify;
+		color: rgb(53, 59, 65);
+	}
+	
+	#inter-titus-gifts form{
+		padding-top: 15px;
+	}
+	
+	#inter-titus-gifts textarea{
+		font-family: skolar-latin, serif;
+		font-size: 16px;
+		width: 250px;
+		height: 100px;
+		resize: none;
+	}
+	
+	#titus-images-opinion img{
+		width: 500px;
+		padding-bottom: 20px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	
+	#titus-images-opinion h1{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: justify;
+		padding: 20px;
+		color: rgb(53, 59, 65);
+	}
+	
+	#titus-images-opinion{
+		width: 540px;
+		position: absolute;
+		top: 300px;
+		left: 30%;
+		background-color: rgb(245, 246, 246);
+		border: dashed 1px rgb(82, 173, 160);
+		display: none;
+	}
+	
+	#titus-all-text{
+		position: absolute;
+		top: 300px;
+		left: 35%;
+		z-index: -.1;
+	}
+	
+	#about-page-center{
+		position: relative;
+		top: 100px;
+	}
+	
+	#about-page{
+		font-family: skolar-latin, serif;
+		font-size: 30px;
+		font-weight: 400;
+		text-align: center;
+		width: 800px;
+		margin: 0 auto;
+	}
+	
+	#about-page-line{
+		width: 500px;
+		height: 1px;
+		background-color: black;
+		margin: 0 auto;
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+}
+
+
+/* mobile style */
+@media (max-width: 1000px) {
+	
+	/* main page style */
+	#nav-wrapper{
+		display: none;
+	}
+	
+	#nav-dropdown-menu{
+		border: rgb(82, 173, 160) 2px dashed;
+		background-color: rgb(225, 226, 226);
+		width: 300px;
+		height: 650px;
+		position: relative;
+		top: -10px;
+		left: 40px;
+		display: none;
+	}
+	
+	#big-x{
+		width: 50px;
+		position: relative;
+		top: -610px;
+		left: 240px;
+	}
+	
+	#nav-dropdown-menu a{
+		color: rgb(82, 173, 160);
+		text-decoration: none;
+	}
+	
+	#nav-dropdown-menu a:visited{
+		color: rgb(82, 173, 160);
+		text-decoration: none;
+	}
+	
+	#nav-dropdown-menu a:hover{
+		color: rgb(82, 173, 160);
+		text-decoration: underline;
+	}
+	
+	#nav-dropdown-menu h1{
+		font-family: video, serif;
+		font-size: 30px;
+		text-align: center;
+		margin-top: 10px;
+	}
+	
+	#mobile-title{
+		position: relative;
+		top: 40px;
+		left: 30px;
+		font-size: 45px;
+		line-height: 45px;
+	}
+
+	#digital{
+		font-family: video, serif;
+		color: rgb(255, 255, 255);
+	}
+	
+	.interactive{
+		color: rgb(82, 173, 160);
+		font-weight: 500;
+	}
+
+	#book{
+		font-family: skolar-latin, serif;
+		color: rgb(53, 59, 65);
+		text-shadow:
+		-1px -1px 0 rgb(196, 154, 108),
+		1px -1px 0  rgb(196, 154, 108),
+		-1px 1px 0 rgb(196, 154, 108),
+		1px 1px 0 rgb(196, 154, 108);
+		font-weight: 400;
+	}
+	
+	#niv{
+		font-family: skolar-latin, serif;
+		color: rgb(196, 154, 108);
+		font-weight: 200;
+		font-size: 25px;
+		text-align: right;
+		position: relative;
+		top: -80px;
+		right: 20px;
+	}
+	
+	#footer{
+		padding: 40px;
+	}
+	
+	#desktop-main-page-nav{
+		display: none;
+	}
+	
+	#bible-game-answer{
+		display: none;
+	}
+	
+	#main-apply-button{
+		display: none;
+	}
+	
+	#game-checker-answer{
+		display: none;
+	}
+	
+	#bible-game-menu{
+		display: none;
+	}
+	
+	#main-images-opinion{
+		display: none;
+	}
+	
+	#row-1{
+		position: relative;
+		left: 30px;
+		display: inline-block;
+		width: 140px;
+	}
+	
+	#row-2{
+		position: relative;
+		left: 40px;
+		display: inline-block;
+		width: 140px;
+	}
+
+	/* row 1 */
+	#mobile-romans{
+		width: 140px;
+		position: relative;
+		top: 70px;
+	}
+	
+	#mobile-2-corinth{
+		width: 140px;
+		position: relative;
+		top: 150px;
+	}
+	
+	#mobile-ephesis{
+		width: 140px;
+		position: relative;
+		top: 260px;
+	}
+	
+	#mobile-colossians{
+		width: 140px;
+		position: relative;
+		top: 340px;
+	}
+	
+	#mobile-2-thess{
+		width: 140px;
+		position: relative;
+		top: 420px;
+	}
+	
+	#mobile-1-timothy{
+		width: 140px;
+		position: relative;
+		top: 550px;
+	}
+	
+	/* row 2 */
+	#mobile-1-corinth{
+		width: 140px;
+		position: relative;
+		top: 200px;
+	}
+	
+	#mobile-galatians{
+		width: 140px;
+		position: relative;
+		top: 300px;
+	}
+	
+	#mobile-philippi{
+		width: 140px;
+		position: relative;
+		top: 380px;
+	}
+	
+	#mobile-1-thess{
+		width: 140px;
+		position: relative;
+		top: 450px;
+	}
+	
+	#mobile-2-timothy{
+		width: 140px;
+		position: relative;
+		top: 510px;
+	}
+	
+	#mobile-titus{
+		width: 140px;
+		position: relative;
+		top: 640px;
+	}
+	
+	/* row 1 */
+	#mobile-romans-click{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(197, 95, 75);
+		position: relative;
+		top: -1140px;
+		left: 60px;
+		display: none;
+	}
+	
+	#mobile-2-corinth-click{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(197, 95, 75);
+		position: relative;
+		top: -935px;
+		left: 60px;
+		display: none;
+	}
+	
+	#mobile-ephesis-click{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(197, 95, 75);
+		position: relative;
+		top: -745px;
+		left: 60px;
+		display: none;
+	}
+	
+	#mobile-colossians-click{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(197, 95, 75);
+		position: relative;
+		top: -565px;
+		left: 60px;
+		display: none;
+	}
+	
+	#mobile-2-thess-click{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(197, 95, 75);
+		position: relative;
+		top: -365px;
+		left: 60px;
+		display: none;
+	}
+	
+	#mobile-1-timothy-click{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(197, 95, 75);
+		position: relative;
+		top: -245px;
+		left: 60px;
+		display: none;
+	}
+	
+	/* row 2 */
+	#mobile-1-corinth-click{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(197, 95, 75);
+		position: relative;
+		top: -1030px;
+		left: -60px;
+		text-align: right;
+		display: none;
+	}
+	
+	#mobile-galatians-click{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(197, 95, 75);
+		position: relative;
+		top: -815px;
+		left: -60px;
+		text-align: right;
+		display: none;
+	}
+	
+	#mobile-philippi-click{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(197, 95, 75);
+		position: relative;
+		top: -625px;
+		left: -60px;
+		text-align: right;
+		display: none;
+	}
+	
+	#mobile-1-thess-click{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(197, 95, 75);
+		position: relative;
+		top: -440px;
+		left: -60px;
+		text-align: right;
+		display: none;
+	}
+	
+	#mobile-2-timothy-click{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(197, 95, 75);
+		position: relative;
+		top: -165px;
+		left: -60px;
+		text-align: right;
+		display: none;
+	}
+	
+	#mobile-titus-click{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(197, 95, 75);
+		position: relative;
+		top: -60px;
+		left: -150px;
+		text-align: right;
+		display: none;
+	}
+	
+	#main-page-nav a{
+		color: rgb(197, 95, 75);
+		text-decoration: none;
+	}
+	
+	#main-page-nav a:visited{
+		color: rgb(197, 95, 75);
+		text-decoration: none;
+	}
+	
+	/* romans style */
+	#roman-title{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 35px;
+		color: rgb(245, 246, 246);
+		text-shadow:
+		-1px -1px 0 rgb(196, 154, 108),
+		1px -1px 0  rgb(196, 154, 108),
+		-1px 1px 0 rgb(196, 154, 108),
+		1px 1px 0 rgb(196, 154, 108);
+	}
+	
+	#roman-chapters{
+		display: none;
+	}
+	
+	#roman-chapters-mobile{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(82, 173, 160);
+		font-size: 60px;
+		position: relative;
+		top: -25px;
+		width: 100px;
+		margin: 0 auto;
+	}
+	
+	#roman-title-center{
+		text-align: center;
+		position: relative;
+		left: 0px;
+		top: 20px;
+		z-index: 1;
+	}
+	
+	#hamburger-menu{
+		width: 50px;
+		position: relative;
+		top: 30px;
+		left: 295px;
+	}
+	
+	#roman-dropdown-menu{
+		width: 310px;
+		position: relative;
+		top: -25px;
+		left: 25px;
+		display: none;
+		z-index: 1;
+	}
+	
+	#roman-dropdown-menu h1{
+		font-family: video, serif;
+		color: rgb(82, 173, 160);
+	}
+	
+	#roman-dropdown-menu span{
+		padding: 15px;
+		display: inline-block;
+		border: rgb(82, 173, 160) 1px solid;
+		background-color: rgb(245, 246, 246);
+	}
+	
+	.mute{
+		display: none;
+	}
+	
+	#roman-images-opinion{
+		display: none;
+	}
+	
+	#roman-verses{
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 500;
+		text-align: right;
+		position: relative;
+		right: 70px;
+		top: -10px;
+	}
+	
+	#roman-map{
+		width: 310px;
+		position: relative;
+		left: 25px;
+		top: -10px;
+	}
+	
+	#roman-text-1{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#roman-castle{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#roman-text-2{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#roman-blindfolded-man{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+
+	#roman-text-3{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#roman-abraham{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+
+	#roman-text-4{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#roman-adam-eve{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+
+	#roman-text-5{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#roman-deadly-sins{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+
+	#roman-text-6{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#roman-law{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+
+	#roman-text-7{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#roman-holy-spirit{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+
+	#roman-text-8{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#roman-israel{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+
+	#roman-text-9{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#roman-disciple{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+
+	#roman-text-10{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#roman-walls{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+
+	#roman-text-11{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#roman-sacrifice{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+
+	#roman-text-12{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#roman-government-building{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+
+	#roman-text-13{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#roman-stumble{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+
+	#roman-text-14{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#roman-pride{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+
+	#roman-text-15{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#roman-blessing{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+
+	#roman-text-16{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#image-simple-gospel{
+		width: 200px;
+		position: fixed;
+		top: 40%;
+		left: 30%;
+		display: none;
+	}
+	
+	/* 1 corinthian style */
+	#one-corinth-title{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 35px;
+		color: rgb(245, 246, 246);
+		text-shadow:
+		-1px -1px 0 rgb(196, 154, 108),
+		1px -1px 0  rgb(196, 154, 108),
+		-1px 1px 0 rgb(196, 154, 108),
+		1px 1px 0 rgb(196, 154, 108);
+	}
+	
+	#one-corinth-chapters{
+		display: none;
+	}
+	
+	#one-corinth-chapters-mobile{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(82, 173, 160);
+		font-size: 60px;
+		position: relative;
+		top: -25px;
+		width: 100px;
+		margin: 0 auto;
+	}
+	
+	#one-corinth-title-center{
+		text-align: center;
+		position: relative;
+		left: 0px;
+		top: 20px;
+	}
+	
+	#one-corinth-dropdown-menu h1{
+		font-family: video, serif;
+		color: rgb(82, 173, 160);
+	}
+	
+	#one-corinth-dropdown-menu span{
+		padding: 15px;
+		display: inline-block;
+		border: rgb(82, 173, 160) 1px solid;
+		background-color: rgb(245, 246, 246);
+	}
+	
+	#one-corinth-dropdown-menu{
+		width: 310px;
+		position: relative;
+		top: -25px;
+		left: 25px;
+		display: none;
+		z-index: 1;
+	}
+	
+	#one-corinth-images-opinion{
+		display: none;
+	}
+	
+	#one-corinth-map{
+		width: 310px;
+		position: relative;
+		left: 25px;
+		top: -10px;
+	}
+	
+	#one-corinth-text-1{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#one-corinth-christ-crucified{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#one-corinth-text-2{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#one-corinth-baby{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#one-corinth-text-3{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#one-corinth-early-church{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#one-corinth-text-4{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#one-corinth-bad-bread{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#one-corinth-text-5{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#one-corinth-lawsuit{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#one-corinth-text-6{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#one-corinth-marriage{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#one-corinth-text-7{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#one-corinth-altar{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#one-corinth-text-8{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#one-corinth-freedom{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#one-corinth-text-9{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#one-corinth-solid-rock{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#one-corinth-text-10{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#one-corinth-mercy{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#one-corinth-text-11{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#one-corinth-sacred-text{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#one-corinth-text-12{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#one-corinth-misuse{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#one-corinth-text-13{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#one-corinth-good-worship{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#one-corinth-text-14{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#one-corinth-last-supper{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#one-corinth-text-15{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#one-corinth-blessing{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#one-corinth-text-16{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	/* 2 corinthian style */
+	#two-corinth-title{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 35px;
+		color: rgb(245, 246, 246);
+		text-shadow:
+		-1px -1px 0 rgb(196, 154, 108),
+		1px -1px 0  rgb(196, 154, 108),
+		-1px 1px 0 rgb(196, 154, 108),
+		1px 1px 0 rgb(196, 154, 108);
+	}
+	
+	#two-corinth-chapters{
+		display: none;
+	}
+	
+	#two-corinth-chapters-mobile{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(82, 173, 160);
+		font-size: 60px;
+		position: relative;
+		top: -25px;
+		width: 100px;
+		margin: 0 auto;
+	}
+	
+	#two-corinth-title-center{
+		text-align: center;
+		position: relative;
+		left: 0px;
+		top: 20px;
+	}
+	
+	#two-corinth-dropdown-menu h1{
+		font-family: video, serif;
+		color: rgb(82, 173, 160);
+	}
+	
+	#two-corinth-dropdown-menu span{
+		padding: 15px;
+		display: inline-block;
+		border: rgb(82, 173, 160) 1px solid;
+		background-color: rgb(245, 246, 246);
+	}
+	
+	#two-corinth-dropdown-menu{
+		width: 310px;
+		position: relative;
+		top: -25px;
+		left: 25px;
+		z-index: 1;
+		display: none;
+	}
+	
+	#two-corinth-images-opinion{
+		display: none;
+	}
+	
+	#two-corinth-map{
+		width: 310px;
+		position: relative;
+		left: 25px;
+		top: -10px;
+	}
+	
+	#two-corinth-text-1{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#two-corinth-healthy-grief{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#two-corinth-text-2{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#two-corinth-new-covenant{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#two-corinth-text-3{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#two-corinth-already{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#two-corinth-text-4{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#two-corinth-new-body{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#two-corinth-text-5{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#two-corinth-idolatry{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#two-corinth-text-6{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#two-corinth-letter{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#two-corinth-text-7{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#two-corinth-lords-people{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#two-corinth-text-8{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#two-corinth-serve-mural{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#two-corinth-text-9{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#two-corinth-paul-ministry{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#two-corinth-text-10{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#two-corinth-false-teachings{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#two-corinth-text-11{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#two-corinth-understanding{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#two-corinth-text-12{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#two-corinth-blessing{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#two-corinth-text-13{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	/* galatian style */
+	#galatians-title{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 35px;
+		color: rgb(245, 246, 246);
+		text-shadow:
+		-1px -1px 0 rgb(196, 154, 108),
+		1px -1px 0  rgb(196, 154, 108),
+		-1px 1px 0 rgb(196, 154, 108),
+		1px 1px 0 rgb(196, 154, 108);
+	}
+	
+	#galatians-chapters{
+		display: none;
+	}
+	
+	#galatians-chapters-mobile{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(82, 173, 160);
+		font-size: 60px;
+		position: relative;
+		top: -25px;
+		width: 100px;
+		margin: 0 auto;
+	}
+	
+	#galatians-title-center{
+		text-align: center;
+		position: relative;
+		left: 0px;
+		top: 20px;
+	}
+	
+	#galatians-dropdown-menu h1{
+		font-family: video, serif;
+		color: rgb(82, 173, 160);
+	}
+	
+	#galatians-dropdown-menu span{
+		padding: 15px;
+		display: inline-block;
+		border: rgb(82, 173, 160) 1px solid;
+		background-color: rgb(245, 246, 246);
+	}
+	
+	#galatians-dropdown-menu{
+		width: 310px;
+		position: relative;
+		top: -25px;
+		left: 25px;
+		z-index: 1;
+		display: none;
+	}
+	
+	#galatians-images-opinion{
+		display: none;
+	}
+	
+	#galatians-map{
+		width: 310px;
+		position: relative;
+		left: 25px;
+		top: -10px;
+	}
+	
+	#galatians-text-1{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#galatians-service{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#galatians-text-2{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#galatians-foolish-law{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#galatians-text-3{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#galatians-blind-man{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#galatians-text-4{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#galatians-freedom-christ{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#galatians-text-5{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#galatians-blessing{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#galatians-text-6{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	/* ephesian style */
+	#ephesis-title{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 35px;
+		color: rgb(245, 246, 246);
+		text-shadow:
+		-1px -1px 0 rgb(196, 154, 108),
+		1px -1px 0  rgb(196, 154, 108),
+		-1px 1px 0 rgb(196, 154, 108),
+		1px 1px 0 rgb(196, 154, 108);
+	}
+	
+	#ephesis-chapters{
+		display: none;
+	}
+	
+	#ephesis-chapters-mobile{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(82, 173, 160);
+		font-size: 60px;
+		position: relative;
+		top: -25px;
+		width: 100px;
+		margin: 0 auto;
+	}
+	
+	#ephesis-title-center{
+		text-align: center;
+		position: relative;
+		left: 0px;
+		top: 20px;
+	}
+	
+	#ephesis-dropdown-menu h1{
+		font-family: video, serif;
+		color: rgb(82, 173, 160);
+	}
+	
+	#ephesis-dropdown-menu span{
+		padding: 15px;
+		display: inline-block;
+		border: rgb(82, 173, 160) 1px solid;
+		background-color: rgb(245, 246, 246);
+	}
+	
+	#ephesis-dropdown-menu{
+		width: 310px;
+		position: relative;
+		top: -25px;
+		left: 25px;
+		z-index: 1;
+		display: none;
+	}
+	
+	#ephesis-images-opinion{
+		display: none;
+	}
+	
+	#ephesis-map{
+		width: 310px;
+		position: relative;
+		left: 25px;
+		top: -10px;
+	}
+	
+	#ephesis-text-1{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#ephesis-alive-christ{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#ephesis-text-2{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#ephesis-gods-plan{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#ephesis-text-3{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#ephesis-unity-christ{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#ephesis-text-4{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#ephesis-light-world{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#ephesis-text-5{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#ephesis-blessing{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#ephesis-text-6{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	/* philippian style */
+	#philippi-title{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 35px;
+		color: rgb(245, 246, 246);
+		text-shadow:
+		-1px -1px 0 rgb(196, 154, 108),
+		1px -1px 0  rgb(196, 154, 108),
+		-1px 1px 0 rgb(196, 154, 108),
+		1px 1px 0 rgb(196, 154, 108);
+	}
+	
+	#philippi-chapters{
+		display: none;
+	}
+	
+	#philippi-chapters-mobile{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(82, 173, 160);
+		font-size: 60px;
+		position: relative;
+		top: -25px;
+		width: 100px;
+		margin: 0 auto;
+	}
+	
+	#philippi-title-center{
+		text-align: center;
+		position: relative;
+		left: 0px;
+		top: 20px;
+	}
+	
+	#philippi-dropdown-menu h1{
+		font-family: video, serif;
+		color: rgb(82, 173, 160);
+	}
+	
+	#philippi-dropdown-menu span{
+		padding: 15px;
+		display: inline-block;
+		border: rgb(82, 173, 160) 1px solid;
+		background-color: rgb(245, 246, 246);
+	}
+	
+	#philippi-dropdown-menu{
+		width: 310px;
+		position: relative;
+		top: -25px;
+		left: 25px;
+		display: none;
+		z-index: 1;
+	}
+	
+	#philippi-images-opinion{
+		display: none;
+	}
+	
+	#philippi-map{
+		width: 310px;
+		position: relative;
+		left: 25px;
+		top: -10px;
+	}
+	
+	#philippi-text-1{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#philippi-humble{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#philippi-text-2{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#philippi-confidence-christ{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#philippi-text-3{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#philippi-blessing{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#philippi-text-4{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	/* colossian style */
+	#colossians-title{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 35px;
+		color: rgb(245, 246, 246);
+		text-shadow:
+		-1px -1px 0 rgb(196, 154, 108),
+		1px -1px 0  rgb(196, 154, 108),
+		-1px 1px 0 rgb(196, 154, 108),
+		1px 1px 0 rgb(196, 154, 108);
+	}
+	
+	#colossians-chapters{
+		display: none;
+	}
+	
+	#colossians-chapters-mobile{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(82, 173, 160);
+		font-size: 60px;
+		position: relative;
+		top: -25px;
+		width: 100px;
+		margin: 0 auto;
+	}
+	
+	#colossians-title-center{
+		text-align: center;
+		position: relative;
+		left: 0px;
+		top: 20px;
+	}
+	
+	#colossians-dropdown-menu h1{
+		font-family: video, serif;
+		color: rgb(82, 173, 160);
+	}
+	
+	#colossians-dropdown-menu span{
+		padding: 15px;
+		display: inline-block;
+		border: rgb(82, 173, 160) 1px solid;
+		background-color: rgb(245, 246, 246);
+	}
+	
+	#colossians-dropdown-menu{
+		width: 310px;
+		position: relative;
+		top: -25px;
+		left: 25px;
+		display: none;
+		z-index: 1;
+	}
+	
+	#colossians-images-opinion{
+		display: none;
+	}
+	
+	#colossians-map{
+		width: 310px;
+		position: relative;
+		left: 25px;
+		top: -10px;
+	}
+	
+	#colossians-text-1{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#colossians-fullness-christ{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#colossians-text-2{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#colossians-alive-christ{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#colossians-text-3{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#colossians-blessing{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#colossians-text-4{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	/* 1 thessalonian style */
+	#one-thess-title{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 35px;
+		color: rgb(245, 246, 246);
+		text-shadow:
+		-1px -1px 0 rgb(196, 154, 108),
+		1px -1px 0  rgb(196, 154, 108),
+		-1px 1px 0 rgb(196, 154, 108),
+		1px 1px 0 rgb(196, 154, 108);
+	}
+	
+	#one-thess-chapters{
+		display: none;
+	}
+	
+	#one-thess-chapters-mobile{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(82, 173, 160);
+		font-size: 60px;
+		position: relative;
+		top: -30px;
+		width: 100px;
+		margin: 0 auto;
+	}
+	
+	#one-thess-title-center{
+		text-align: center;
+		position: relative;
+		left: 0px;
+		top: 20px;
+	}
+	
+	#one-thess-dropdown-menu h1{
+		font-family: video, serif;
+		color: rgb(82, 173, 160);
+	}
+	
+	#one-thess-dropdown-menu span{
+		padding: 15px;
+		display: inline-block;
+		border: rgb(82, 173, 160) 1px solid;
+		background-color: rgb(245, 246, 246);
+	}
+	
+	#one-thess-dropdown-menu{
+		width: 310px;
+		position: relative;
+		top: -25px;
+		left: 25px;
+		z-index: 1;
+		display: none;
+	}
+	
+	#one-thess-images-opinion{
+		display: none;
+	}
+	
+	#one-thess-map{
+		width: 310px;
+		position: relative;
+		left: 25px;
+		top: -10px;
+	}
+	
+	#one-thess-text-1{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#one-thess-books-ministry{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#one-thess-text-2{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#one-thess-persecute-prison{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#one-thess-text-3{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#one-thess-pray-trust{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#one-thess-text-4{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#one-thess-blessing{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#one-thess-text-5{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	/* 2 thessalonian style */
+	#two-thess-title{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 35px;
+		color: rgb(245, 246, 246);
+		text-shadow:
+		-1px -1px 0 rgb(196, 154, 108),
+		1px -1px 0  rgb(196, 154, 108),
+		-1px 1px 0 rgb(196, 154, 108),
+		1px 1px 0 rgb(196, 154, 108);
+	}
+	
+	#two-thess-chapters{
+		display: none;
+	}
+	
+	#two-thess-chapters-mobile{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(82, 173, 160);
+		font-size: 60px;
+		position: relative;
+		top: -30px;
+		width: 100px;
+		margin: 0 auto;
+	}
+	
+	#two-thess-title-center{
+		text-align: center;
+		position: relative;
+		left: 0px;
+		top: 20px;
+	}
+	
+	#two-thess-dropdown-menu h1{
+		font-family: video, serif;
+		color: rgb(82, 173, 160);
+	}
+	
+	#two-thess-dropdown-menu span{
+		padding: 15px;
+		display: inline-block;
+		border: rgb(82, 173, 160) 1px solid;
+		background-color: rgb(245, 246, 246);
+	}
+	
+	#two-thess-dropdown-menu{
+		width: 310px;
+		position: relative;
+		top: -25px;
+		left: 25px;
+		z-index: 1;
+		display: none;
+	}
+	
+	#two-thess-images-opinion{
+		display: none;
+	}
+	
+	#two-thess-map{
+		width: 310px;
+		position: relative;
+		left: 25px;
+		top: -10px;
+	}
+	
+	#two-thess-text-1{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#two-thess-persecution{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#two-thess-text-2{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#two-thess-blessing{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#two-thess-text-3{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	/* 1 timothy style */
+	#one-timothy-title{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 35px;
+		color: rgb(245, 246, 246);
+		text-shadow:
+		-1px -1px 0 rgb(196, 154, 108),
+		1px -1px 0  rgb(196, 154, 108),
+		-1px 1px 0 rgb(196, 154, 108),
+		1px 1px 0 rgb(196, 154, 108);
+	}
+	
+	#one-timothy-chapters{
+		display: none;
+	}
+	
+	#one-timothy-chapters-mobile{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(82, 173, 160);
+		font-size: 60px;
+		position: relative;
+		top: -30px;
+		width: 100px;
+		margin: 0 auto;
+	}
+	
+	#one-timothy-title-center{
+		text-align: center;
+		position: relative;
+		left: 0px;
+		top: 20px;
+	}
+	
+	#one-timothy-dropdown-menu h1{
+		font-family: video, serif;
+		color: rgb(82, 173, 160);
+	}
+	
+	#one-timothy-dropdown-menu span{
+		padding: 15px;
+		display: inline-block;
+		border: rgb(82, 173, 160) 1px solid;
+		background-color: rgb(245, 246, 246);
+	}
+	
+	#one-timothy-dropdown-menu{
+		width: 310px;
+		position: relative;
+		top: -25px;
+		left: 25px;
+		z-index: 1;
+		display: none;
+	}
+	
+	#one-timothy-images-opinion{
+		display: none;
+	}
+	
+	#one-timothy-map{
+		width: 310px;
+		position: relative;
+		left: 25px;
+		top: -10px;
+	}
+	
+	#one-timothy-text-1{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#one-timothy-worship{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#one-timothy-text-2{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#one-timothy-leaders{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#one-timothy-text-3{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#one-timothy-false-teachers{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#one-timothy-text-4{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#one-timothy-shout-jesus{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#one-timothy-text-5{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#one-timothy-blessing{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#one-timothy-text-6{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	/* 2 timothy style */
+	#two-timothy-title{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 35px;
+		color: rgb(245, 246, 246);
+		text-shadow:
+		-1px -1px 0 rgb(196, 154, 108),
+		1px -1px 0  rgb(196, 154, 108),
+		-1px 1px 0 rgb(196, 154, 108),
+		1px 1px 0 rgb(196, 154, 108);
+	}
+	
+	#two-timothy-chapters{
+		display: none;
+	}
+	
+	#two-timothy-chapters-mobile{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(82, 173, 160);
+		font-size: 60px;
+		position: relative;
+		top: -30px;
+		width: 100px;
+		margin: 0 auto;
+	}
+	
+	#two-timothy-title-center{
+		text-align: center;
+		position: relative;
+		left: 0px;
+		top: 20px;
+	}
+	
+	#two-timothy-dropdown-menu h1{
+		font-family: video, serif;
+		color: rgb(82, 173, 160);
+	}
+	
+	#two-timothy-dropdown-menu span{
+		padding: 15px;
+		display: inline-block;
+		border: rgb(82, 173, 160) 1px solid;
+		background-color: rgb(245, 246, 246);
+	}
+	
+	#two-timothy-dropdown-menu{
+		width: 310px;
+		position: relative;
+		top: -25px;
+		left: 25px;
+		z-index: 1;
+		display: none;
+	}
+	
+	#two-timothy-images-opinion{
+		display: none;
+	}
+	
+	#two-timothy-map{
+		width: 310px;
+		position: relative;
+		left: 25px;
+		top: -10px;
+	}
+	
+	#two-timothy-text-1{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#two-timothy-assurance{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#two-timothy-text-2{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#two-timothy-final-days{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#two-timothy-text-3{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#two-timothy-blessing{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#two-timothy-text-4{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	/* titus style */
+	#titus-title{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		font-size: 35px;
+		color: rgb(245, 246, 246);
+		text-shadow:
+		-1px -1px 0 rgb(196, 154, 108),
+		1px -1px 0  rgb(196, 154, 108),
+		-1px 1px 0 rgb(196, 154, 108),
+		1px 1px 0 rgb(196, 154, 108);
+	}
+	
+	#titus-chapters{
+		display: none;
+	}
+	
+	#titus-chapters-mobile{
+		font-family: skolar-latin, serif;
+		font-weight: 400;
+		color: rgb(82, 173, 160);
+		font-size: 60px;
+		position: relative;
+		top: -30px;
+		width: 100px;
+		margin: 0 auto;
+	}
+	
+	#titus-title-center{
+		text-align: center;
+		position: relative;
+		left: 0px;
+		top: 20px;
+	}
+	
+	#titus-dropdown-menu h1{
+		font-family: video, serif;
+		color: rgb(82, 173, 160);
+	}
+	
+	#titus-dropdown-menu span{
+		padding: 15px;
+		display: inline-block;
+		border: rgb(82, 173, 160) 1px solid;
+		background-color: rgb(245, 246, 246);
+	}
+	
+	#titus-dropdown-menu{
+		width: 310px;
+		position: relative;
+		top: -25px;
+		left: 25px;
+		z-index: 1;
+		display: none;
+	}
+	
+	#titus-images-opinion{
+		display: none;
+	}
+	
+	#titus-map{
+		width: 310px;
+		position: relative;
+		left: 25px;
+		top: -10px;
+	}
+
+	#titus-text-1{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#titus-good-gospel{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#titus-text-2{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	#titus-blessing{
+		width: 310px;
+		position: relative;
+		left: 25px;
+	}
+	
+	#titus-text-3{
+		width: 305px;
+		position: relative;
+		left: 25px;
+		text-align: justify;
+		font-family: skolar-latin, serif;
+		font-size: 14px;
+		font-weight: 100;
+		display: none;
+		margin-bottom: 15px;
+		line-height: 25px;
+	}
+	
+	/* mobile sizing */
+	#wrapper{
+		
+	}
+	
+	#center{
+		width: 360px;
+	}
+}
